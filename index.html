@@ -1,1 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DNA muscle ~powered by DNA | BIOMOD2019</title>
+    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
+        
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<link rel="stylesheet" media="all" type="text/css" href="style.css" />
+<!-- ※デフォルトのスタイル（style.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="tablet.css" />
+<!-- ※タブレット用のスタイル（tablet.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+<!-- ※スマートフォン用のスタイル（smart.css） -->
+        
+        
+        <link rel="stylesheet" href="experimentwiki.css">
+        
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="reponsive.css">
+        
+        <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+        
+        
+        
+    </head> 
+    
+    
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+  
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     
+ <script> 
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+    
+<!--============閉会ボタン===========================-->
+<script>
+   $(function(){
+   $("ul.children").after("<span class='accordionBtn'></span>");
+   $("ul.children").hide();
+   $("ul .accordionBtn").on("click", function() {
+     $(this).prev("ul").slideToggle();
+     $(this).toggleClass("active");
+   });
+});    
+    </script>
+    
+    
+<!--==================================================-->
+  
+    
+    
+    
+    
+    
+      <body>
+<!-- =======================header====================================================== --> 
+           <div class="header">
 
+            
+<div class="header-left">
+    <div class="head1"></div>
+    <div class="head2"><a><a>RHCR<br>TeamSendai</a></a></div>
+    <div class="head3"></div>
+    <div class="head4"></div>
+</div>
+                     <!--=========================================================-->
+
+<div class ="header-right"> 
+    <div class="headr1"></div>
+<ul class="nav">
+<li><a href="#">Home</a>
+</li>
+<li><a href="#">Strategy</a>
+<ul>
+<li><a href="#">b1</a></li>
+<li><a href="#">b1</a>
+<ul>
+<li><a href="#">b2</a></li>
+<li><a href="#">b2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Strategy</a>
+<ul>
+<li><a href="#">b1</a></li>
+<li><a href="#">b1</a>
+<ul>
+<li><a href="#">b2</a></li>
+<li><a href="#">b2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Strategy</a>
+<ul>
+<li><a href="#">b1</a></li>
+<li><a href="#">b1</a>
+<ul>
+<li><a href="#">b2</a></li>
+<li><a href="#">b2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">About</a>
+<ul>
+<li><a href="#">c1</a>
+<ul>
+<li><a href="#">c2</a></li>
+<li><a href="#">c2</a></li>
+</ul>
+</li>
+<li><a href="#">c1</a></li>
+</ul>
+</li>
+<li><a href="#">Works</a>
+<ul>
+<li><a href="#">d1</a></li>
+<li><a href="#">d1</a>
+<ul>
+<li><a href="#">d2</a></li>
+<li><a href="#">d2</a>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Contact</a>
+<ul>
+<li><a href="#">e1</a>
+<ul class="left">
+<li><a href="#">e2-1</a></li>
+<li><a href="#">e2-1</a></li>
+</ul>
+</li>
+<li><a href="#">e1</a>
+<ul class="left">
+<li><a href="#">e2-2</a></li>
+<li><a href="#">e2-2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<!--nav--></ul>
+   
+                </div>
+            
+     
+        </div>
+          
+    
+          
+<!-- ========================main====================================================== -->        
+     <div class="main">
+         
+         <div class="container">
+             <p><br><br></p>
+             
+             
+             
+<!--=========================================-->          
+<div class ="contents">
+
+             
+             </div>            
+             
+             
+           
+             <h2>Experiment</h2>
+        <h3>Objective of our experiments<hr></h3>
+             <p>Here, we propose a system to realize gel swelling and shrinking, developed on an approach based on DNA hybridization chain reaction(HCR) (See Idea fig.1 for further information about HCR) .<br>
+             Our system is what we call Reversible hybridization chain reaction(RHCR), in which DNA strands extending and regressing occur independently from each other. (See Idea for further information about RHCR).<br>
+             In this experiment, we confirmed if DNA strands would extend and shrink by adding DNA hairpins performing RHCR.<br><br><br>
+             </p>
+            
+        <h3>Purpose &amp; Method<hr></h3>
+             <p>Before we proceed to the RHCR experiment, we tried to examine the HCR extension by electrophoresis using DNA sequences based on Cangialosi et al., 2017. Therefore, performing experiments on HCR makes it possible to investigate both validity and experimental condition of RHCR, like temperature, DNA concentration ratio and buffer concentration.<br><br>
+                 For this experiment, we performed polyacrylamide gel electrophoresis (PAGE) (See <a href="Material.html" style="font-size: 24px;">Material &amp;Method </a>for further information about electrophoresis) to confirm HCR. (We call A’ initiator and H1,H2 hairpin DNAs.) To experimentally show which sequence drives HCR, we prepared the 31 samples based on the existence/absence of 5 DNA components. We referred to S. Venkataraman et al., 2007 and fixated the concentration ratio of all five samples (A’:R’:H1:H2:L=1:1:4:4:2) because there should be more hairpin DNAs more than initiator DNAs for HCR reaction. <br><br><br>
+             </p>
+        <h3>Results &amp; Discussion<hr></h3>
+            
+             <div class="imagegazo">
+                  <img src="imexperiment/yoshino3.png" id="gazo"   
+                width="100%" border="1" alt="">
+                 <p>Fig.1  Confirmation of HCR Progression without L combination(overnight, at room temperature)
+                 </p>
+                     At the same time, we performed another experiment for Fig.3 with A combination.(lane 16 to 18) 
+                 
+             </div>
+             
+             <p> <br>
+                 First, we conducted the experiment with 15 samples of different combinations, all without combining L,to confirm HCR (Fig.1).<br><br>
+                 For hairpin DNAs, the bands observed above 20 bp were structures in the form of hairpins. Smeared bands caused by different size of structures formed by HCR were observed around 120 bp to 200 bp when A’ was added to the solution with hairpin DNAs (lane 13,15), enough for constructing tetramer,suggesting that HCR had occurred. (Fig.1) <br><br><br>
+             </p>
+             
+             
+            <div class="imagegazo"> 
+              <img src="imexperiment/yoshino4.png" id="gazo"
+                width="100%" border="1" alt="">
+             <p>Fig.2  Confirmation of HCR Progression with L combination (overnight, 1 hr kept at 37 degrees)</p>
+                They had been incubated for 48 hours before being incubated at 37 degrees. However, the one mixed together in lane 16 was kept at 95 °C for five minutes and afterward cooled down by 1 °C per minute until the temperature reached 25 °C.
+
+             </div>
+             <p>Second, in order to make sure L doesn’t directly involve with HCR, we conducted the experiment with 16 different samples of different combinations, all combined with L, to confirm HCR (Fig.2). As a result,compared to Fig.1, the bands overall shifted up by hybridizing L, suggesting that HCR occurred as well.
+             <br>
+             Thus, we confirmed that L doesn’t directly involve with HCR.
+             <br><br>
+             Furthermore, smeared bands were observed in the presence of hairpin DNAs despite the absence of initiator (Fig.1, lane 10 &amp; Fig.2, lane 13). This is considered to be an effect of a “leak reaction”. Leak reaction refers to the chain reaction that occurs without initiator. We considered that the leak reaction occurred due to the arbitrary opening of H1 and H2. If H1 and H2 are opened even a little, HCR progression cannot be prevented. Thus, we are going to reexamine the experimental conditions to prevent the leak.
+             <br><br>
+                 More importantly, we observed unexpected “extended DNA band ” (Fig.1, lane14 &amp; Fig.2, lane 17). We have to think over the reason behind this phenomenon. However, we confirmed HCR occurrence successfully because we observed more smeared bands near the well in lane 13 &amp; 15(Fig.1) and in lane 16 &amp; 18(Fig.2) than in lane 14(Fig.1) and in lane 17(Fig.2). We confirmed it quantitatively below.(Fig.3)(See <a href="Material.html" style="font-size: 24px;">Material &amp; Method </a>for further information about the analysis) In lane 14(Fig.1) and in lane 17(Fig.2), we considered leak reaction of DNA hairpins occurred.<br><br><br>
+             </p>
+         
+         <div class="image70">
+                 <p>A</p><img src="imexperiment/hanten.png" id="gazo"   
+                  width="100%" border="1" alt="">
+                 <p>B</p><img src="imexperiment/Fig.3B.png" id="gazo"   
+                width="100%" border="1" alt="">
+         <p>Fig.3 Quantitative analysis of HCR. ( B: From 300 bp to 80 bp. orange: lane 13, yellow: lane 15, gray: lane 14, blue: lane 10 of Fig.1)</p>
+             Distance in the graph refers to the distance from the well to the gel. The longer the distance, the closer to 0 bp.
+             Gray value refers to the fluorescence intensity along the distance. The higher gray value is, the more intense bands
+             are observed in electrophoresis.
+             <br><br>
+             (A)We analyzed the lanes surrounded by rectangles.<br><br>
+(B) The graph showed the fluorescence intensity of DNA from 300bp to 80bp. The sample with initiator (lane 13 &amp;
+15) was different from the sample without initiator.
+             <br><br>
+         </div>
+             
+             
+             <p>
+             
+                In order to suggest that A’ is necessary for HCR, we analyzed the fluorescence intensity lane 13, 14 &amp; 15
+(Fig.1) along with each lane(300 bp to 80 bp). From a result, there appears to be some difference between the one with
+initiator(lane 13 &amp; 15) and the one without initiator (lane 14), suggesting the reaction other than leak
+reaction occurred.<br><br>
+                    We also analyzed lane 10 (Fig.1) to confirm the difference between the leak reaction and HCR quantitatively. We observed the ,difference between lane 10 and lane 13 &amp; 15, suggesting that HCR
+occurred in lane 13 &amp; 15 (Fig.1).
+                 <br><br>
+                 To get a story straight,the results (Fig.1 lane 13 &amp; 15, Fig.2 lane 16 &amp; 18) matches with S.<br>
+                        Venkataraman(2007), which means there is a high possibility for us to replicate HCR.<br><br><br></p>
+         
+          </div></div>
+    
+    <div class="main2">
+         
+         <div class="container">
+             
+             
+             
+             <p>
+                    Here, in order to make a longer band near the well, we decided to conduct the next experiments as below.
+             <br><br>
+            
+             
+            
+                 Make better the experimental condition, like incubation time, temperature condition and hairpin DNAs concentration. (See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for further information about the experiments)
+</p>
+                 <h5>Incubation time (Fig.S1)</h5>
+                 <p>
+                     we performed the experiment when the incubation time was changed to 1hr, overnight. As a result, we confirmed 1 hr incubation is still enough for hybridization of our DNA components. Thus, we decided to incubate the prepared samples for 1 hour before electrophoresis.<br>
+                 </p>
+                 <h5>Thermo condition</h5>
+                 <p>
+                    In general, at higher temperature, hybridization reaction will be accelerated. Thus, we tried to confirm the effect of thermo condition (Fig.3A). As a result, we observed more smeared bands near the well than the one at room temperature (Fig.1). Thus, we decided to perform the experiment at higher temperature than room temperature.<br>
+                 </p>
+                 <h5>Hairpin DNAs concentration</h5>
+                 <p>
+                    We conducted the experiment to confirm the effect of higher hairpin DNAs concentration. As a result, there is no big change between the one with higher hairpin DNA concentration and the one with lower hairpin DNA concentration.(Fig.4B, lane 14 & 17) Thus, for hairpin DNA, 4 times as much concentration as the initiator is still enough for hybridization reaction.<br>
+                 </p>
+                 <h5>Reaction limitation by R’</h5>
+                 <p>
+                     we tried to confirm C’ delays the HCR by restricting the toehold  length.(Fig.4B lane 15 & 17) As a result,  the one without R’ doesn’t differ from the one mixed altogether, suggesting that R’ doesn’t limit the hybridization in our DNA samples.<br>
+                 </p>
+                 </div></div>
+          
+          <div class="main">
+         
+         <div class="container">
+             <p>Confirm the most stable structure of our DNA by annealing.(Fig.4)(See <a href="Material.html" style="font-size: 24px;">Material &amp; Method</a> for
+further information about annealing)</p>
+            <div class="image70">
+                
+                <p>A</p>    
+                <img src="imexperiment/Fig.4A.png" id="gazo"   
+                width="100%" border="1" alt="">
+                <p>B</p>    
+                <img src="imexperiment/Fig.4B.png" id="gazo"   
+                width="100%" border="1" alt="">
+                 <p>Fig.4 Examination of the most stable structure(overnight, A:kept at 37      degrees after being annealed in 48 hours at room temperature ,<br>B: After being annealed kept at room temperature)
+                 </p>
+                Lane 16(A) and lane 14 to 18(B) were annealed from 95 degrees to 25 degrees.(-1 degree/1 min). In Lane 16 and 18(B), the concentration of hairpin DNAs is 10 times as much as the initiator. Samples were diluted in one-tenth in lane 17 and 19(B).
+                
+                
+             </div>
+                 
+                 
+             
+             <p>
+                 As a result, polymerized structures were unstable, against our expectations. Hence it were not
+fit with results in S. Venkataraman(2007), we list the plan for next experiment below.<br>
+            </p>
+                 <p>
+                     ● Annealing (H1+H2) to make sure hairpin DNAs are the most stable in the hybridized state with each other.
+                     <br>
+                     ● Change the annealing condition of H1,H2 so that they never form dimer and trimer with each other.
+                     <br>
+                     ●Change the electrophoresis condition. For example, we can perform the electrophoresis at 4 degrees, where DNA structures are more stable than at room temperature.
+                     <br><br><br>
+                 </p>
+            
+            <h3>Summary<hr></h3>
+            <p>
+                During the first half of our experiment, HCR progression was observed. Although we found out
+that our DNA doesn’t form polymer as a stable structure during the latter half of the experiment, we
+conducted some other experiments to find out the better experimental condition to confirm HCR. (See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for other electrophoresis results). Thus, there is a high possibility that we
+could replicate the gel swelling and shrinking in our future experiment.
+            </p>
+                 
+            <h3>Information<hr></h3>
+            
+           <a href="supplementary.html" class="btn-square">Supplementary information</a>
+            
+           <a href="Material.html" class="btn-square">Material &amp; Method</a>
+             
+
+             
+            
+</div>
+</div>   
+<!-- =============================================================== -->      
+        <div class="footer">
+                 <div class="footer-left">
+                    
+                 </div>
+                 <div class="footer-right">
+                     &copy;2019 TEAM SENDAI
+                 </div>
+                 <div class="clear"></div>
+              </div>  
+        
+         
+     
+    </body>
+</html>

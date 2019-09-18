@@ -1,0 +1,363 @@
+/*===============================================
+●tablet.css 画面の横幅が768pxまで
+===============================================*/
+@media screen and (min-width: 416px) and (max-width: 1080px){
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;　
+}
+#container{
+width:100%;
+}
+    
+body{
+    
+    font-family: 'arial',sans-serif;
+    font-size: 120%;
+    margin: 0;
+}
+    
+.main{
+    padding:20px 0px 0px 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main2{
+    background-color: lavenderblush;
+    padding:20px 0px 0px 0px;
+    border:red 0px solid;
+    margin: auto;
+}
+.main3{
+    background-color: lavender;
+    padding:20px 10px 20px;
+    border:red 0px solid;
+    margin: 0px;
+}
+
+    
+    
+.container{
+    max-width: 1000px;
+    padding:0px 20px;
+    margin:auto;
+}
+.container1{
+    max-width: 900px;
+    padding:20px 20px;
+    margin: auto;
+    
+}
+.container2{
+    max-width: 1200px;
+    padding:0px 60px;
+    margin: auto;
+}
+
+.table1{
+    max-width: 1200px;
+    padding:0;
+    margin: 2.5%;
+}
+.table1>p{
+    margin-top:5px;
+    margin-bottom: 1px;
+    font-size:18px;
+}
+.table1>li{
+}
+
+    
+/*========================= imgbox ===============================*/
+.img100{
+    max-width: 1200px;
+    padding:0;
+    margin: 2.5%;
+    text-align: justify;
+}
+.img100 >p{
+    margin-top:0px;
+    margin-bottom: 5px;
+    font-size:18px;
+}
+.img100 >h4{
+    text-align: center;
+}
+
+.img70{
+    max-width: 1200px;
+    padding:0;
+    margin: 5% 15% 5% 15%;
+    text-align: justify;
+}
+.imag70 >p{
+    margin-top:0px;
+    margin-bottom: 5px;
+    font-size:18px;
+}
+
+/*========================  imgbox  ===========================*/
+    
+    
+.header{
+    height: 100px;
+    width:100%;
+    box-shadow: 0 0 15px #ddddd;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    display: inline-block;
+}
+.header-right{
+    height: 30px;
+    background-color: #9fb7d4 ;
+    text-align: center;
+    display: flex;
+    }
+
+.header-left {
+    height:70px;
+    font-size: 100%;
+    background-color:#121633 ;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .head1{
+        margin-right: 10px;
+        margin-left: 0;
+        height: 70px;
+        width: 270px;
+        background-image: url("images1/hutterdesign1.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    .head2{
+        font-size: 120%;
+        margin-right: auto;
+        height: 50px;
+        color: white;
+    }
+    .head3{
+        height: 50px;
+        width: 50px;
+        margin-right: 5px;
+        background-image: url("images1/twitter.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    .head4{
+        height: 50px;
+        width: 45px;
+        margin-right: 45px;
+        background-image: url("images1/youtube.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+/* ============================ header dropdown ============================== */
+
+
+/* ============================ header dropdown ============================== */
+
+/* ============================ bottan  ======================================== */    
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+    
+/* ============================ bottan  ======================================== */    
+
+
+
+
+/*===============     font      ===============*/   
+
+
+p{
+    font-size: 1em;
+    text-align: justify;
+    color:black;
+    margin: 0.4em 0.2em 0.4em 0.2em;
+}
+
+h2{
+    font-size: 2.5em;
+    color:black;
+    border:#2f3a44 3px solid;  
+    border-left:#2f3a44 10px solid;  
+    padding: 5px 30px;
+    margin-bottom: 0;
+}
+
+h3{ font-size:2em;
+    color: black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h4{
+    font-size:1.5em;
+    color: black;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+h5{
+    font-size: 1em;
+    margin-bottom: 2px;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    
+}      
+    
+/*==================================================*/    
+    
+    
+.nav {
+  width: 750px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.nav li {
+  position: relative;
+  list-style: none;
+}
+.nav li a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  background: #9fb7d4;
+  transition: 0.5s;
+  text-decoration: none;
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+}
+.nav > li:hover > a {/*layer-1*/
+  color: orange;
+  background: #afc6e2;
+}
+.nav > li li:hover > a {/*layer-2*/
+  color: olive;
+  background: #afc6e2;
+}
+.nav li ul {
+  top: 30px;
+  left: -40px;
+  position: absolute;
+}
+.nav li ul li {
+  overflow: hidden;
+  height: 0;
+  transition: 0.2s;
+}
+.nav li ul li a {
+  border-top: 1px solid #eee;
+}
+.nav li:hover > ul > li {
+  overflow: visible;
+  height: 30px;
+}
+  .nav li ul li ul {
+    top: 0;
+    left: 110px;
+  }
+  .nav li ul li ul:before {/*layer-2▷*/
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 30px;
+    border: 5px solid transparent;
+    border-left: 5px solid #fff;
+  }
+  .nav li ul li ul li:hover > a {/*layer-3*/
+    color: pink;
+    background: #afc6e2;
+  }
+  .nav li ul li ul.left {
+    top: 0;
+    left: -190px;
+  }
+  .nav li ul li ul.left:before,/*layer-2-left▷*/
+  .nav li ul li ul li ul.left:before {/*layer-3-left▷*/
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 190px;
+    border: 5px solid transparent;
+    border-right: 5px solid #fff;
+  }
+  .nav li ul li ul.left li:hover > a {/*layer-2-left*/
+    color: pink;
+    background: #afc6e2;
+  }
+  .nav li ul li ul li ul.left li:hover > a {/*layer-3-left*/
+    color: purple;
+    background: #afc6e2;
+  }
+.content {
+  width: 750px;
+  height: 200px;
+  background: #eee;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+    
+    
+    
+    
+    
+    
+    
+/*===============     font      ===============*/       
+    
+
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #121633;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-left{
+   
+}  
+.footer-right {
+    color: #e8e8e8;
+    font-size:24px;
+    float: right;
+    padding-top:90px;
+    padding-right: 50px;
+    margin: 0px; 
+    background-color: #121633;
+}
+}
