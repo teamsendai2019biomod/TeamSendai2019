@@ -1,0 +1,61 @@
+.dropdwn{
+    max-width: 1200px;
+    height: 58px;
+    display: flex;
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+}
+li{
+    max-width: calc(1200px/6);
+    position: relative;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dropdwn>li{
+    width: 1200px;
+    margin: 1px;
+    background: #fff;
+    display: inline;
+}
+
+
+
+
+
+
+.dropdwn_menu{
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 5px;
+    padding: 0;
+    background-color: cyan;
+}
+
+.dropdwn_menu li{
+    width: 100%;
+}
+
+.dropdwn_menu li a{
+    padding: 10px;
+    margin: -5px 5px -5px -5px;
+    display: block;
+    color: #fff;
+    font-size:20px;
+}
+
+li a:hover{
+    background: #b3d7ff;
+    padding: 10px;
+    color: aqua;
+}
