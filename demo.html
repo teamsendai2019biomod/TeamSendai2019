@@ -1,112 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>DNA muscle ~powered by DNA | BIOMOD2019</title>
-    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
-        
-        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
-
-      
-       <link rel="stylesheet" href="common1.css">  
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="reponsive.css">
-        
-        <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
-        
-        
-        
-    </head> 
-    
-    
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+     <link rel="stylesheet" href="demo.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
   
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
      
- <script> 
-        $(function(){
-    $('.dropdwn li').hover(function(){
-        $("ul:not(:animated)", this).slideDown();
-    }, function(){
-        $("ul.dropdwn_menu",this).slideUp();
-    });
-});
-        </script>
     
-    
-<!--============閉会ボタン===========================-->
-<script>
-   $(function(){
-   $("ul.children").after("<span class='accordionBtn'></span>");
-   $("ul.children").hide();
-   $("ul .accordionBtn").on("click", function() {
-     $(this).prev("ul").slideToggle();
-     $(this).toggleClass("active");
-   });
-});    
-    </script>
-    
-    
-<!--==================================================-->
-<script>
-$('.menu-trigger').on('click',function(){
-  if($(this).hasClass('active')){
-    $(this).removeClass('active');
-    $('main').removeClass('open');
-    $('nav').removeClass('open');
-    $('.overlay').removeClass('open');
-  } else {
-    $(this).addClass('active');
-    $('main').addClass('open');
-    $('nav').addClass('open');
-    $('.overlay').addClass('open');
-  }
-});
-$('.overlay').on('click',function(){
-  if($(this).hasClass('open')){
-    $(this).removeClass('open');
-    $('.menu-trigger').removeClass('active');
-    $('main').removeClass('open');
-    $('nav').removeClass('open');      
-  }
+<script>    
+    $(function() {
+  $('.toggle').click(function() {
+    $(this).toggleClass("active");
+		if($(this).hasClass('active')) {
+			$('.global_nav').addClass('active');
+		} else {
+			$('.global_nav').removeClass('active');
+		}
+  });
 });
     </script>
-    
-    
-    
-      <body>
-<!-- =======================header====================================================== --> 
-          
-          
-    
-          
-<!-- ========================main====================================================== -->        
-    
-         
- <div class="wrapper">
-  <main>
-    <h1>ドロワーメニュー</h1>
-    <p>コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ</p>
-  </main>
-  <div class="menu-trigger" href="">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <nav>
-    <ul>
-      <li>MENU</li>
-      <li>MENU</li>
-      <li>MENU</li>
-    </ul>
-  </nav>
-  <div class="overlay"></div>
+    <body>
+<div class="toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span>menu</span>
 </div>
-   
-<!-- =============================================================== -->      
-       
         
-         
-     
+<nav class="global_nav">
+  <ul>
+    <li class="nav_li"><a href="#menu1">メニュー1</a></li>
+    <li class="nav_li"><a href="#menu2">メニュー2</a></li>
+    <li class="nav_li"><a href="#menu3">メニュー3</a></li>
+  </ul>
+</nav>        
+        
+        
     </body>
 </html>

@@ -40,6 +40,19 @@
 });
         </script>
     
+<script>    
+    $(function() {
+  $('.toggle').click(function() {
+    $(this).toggleClass("active");
+		if($(this).hasClass('active')) {
+			$('.global_nav').addClass('active');
+		} else {
+			$('.global_nav').removeClass('active');
+		}
+  });
+});
+    </script>    
+    
     
 <!--============閉会ボタン===========================-->
 <script>
@@ -55,28 +68,43 @@
     
     
 <!--==================================================-->
-  
-    
+  <script>
+      var startPos = 0,winScrollTop = 0;
+    $(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header').addClass('hide');
+        $('.global_nav').addClass('hide');
+    } else {
+        $('.header').removeClass('hide');
+        $('.global_nav').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+    </script>
     
     
     
     
       <body>
-<!-- =======================header====================================================== --> 
-           <div class="header">
+<!-- =======================header====================================================== -->    
+          
+          <div class="header">
 
             
 <div class="header-left">
     <div class="head1"></div>
     <div class="head2"><a><a>RHCR<br>TeamSendai</a></a></div>
-    <div class="head3"></div>
-    <div class="head4"></div>
+    <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
+"><div class="head4"></div></a> 
 </div>
                      <!--=========================================================-->
-
+<!--
 <div class ="header-right"> 
     <div class="headr1"></div>
-<ul class="nav">
+   
+    <ul class="nav">  
 <li><a href="#">Home</a>
 </li>
 <li><a href="#">Strategy</a>
@@ -155,9 +183,11 @@
 </li>
 </ul>
 </li>
-<!--nav--></ul>
-   
-                </div>
+
+    
+    
+    </ul>
+                </div>    -->
             
      
         </div>
@@ -171,6 +201,128 @@
              <p><br><br></p>
              
              
+
+ <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>        
+
+                         
+ <div class="global_nav"> 
+   <!-- <div class="glnavleft">
+    <li class="nav_li"><a href="#menu1">メニュー1</a></li>
+    <li class="nav_li"><a href="#menu2">メニュー2</a></li>
+    <li class="nav_li"><a href="#menu3">メニュー3</a></li>
+    </div>     -->
+   
+        
+    <ul class="nav"> 
+<li><a href="#">Home</a>
+    <ul>
+        <li><a href="#">Abstruct</a></li>
+        <li><a href="#">Youtube</a>
+        
+        </li>
+    </ul>
+</li>
+
+<li><a href="#">Background</a>
+    <ul>
+        <li><a href="#">Motivation</a></li>
+        <li><a href="#">Merit</a></li>
+        <li><a href="#">Problem&#33Solution</a></li>
+    </ul>
+</li>
+<li><a href="#">Design</a>
+    <ul>
+        <li><a href="#">HCR</a></li>
+        <li><a href="#">RHCR</a>
+            
+        </li>
+    </ul>
+</li>
+
+<li><a href="#">Simulation</a>
+    <ul>
+<li><a href="#">free energy estimation</a></li>
+<li><a href="#">Reaction rate simulation</a>
+<ul>
+<li><a href="#">d2</a></li>
+<li><a href="#">d2</a>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Experiment</a>
+    <ul>
+<li><a href="#">HCR</a></li>
+<li><a href="#">RHCR</a>
+<ul>
+<li><a href="#">d2</a></li>
+<li><a href="#">d2</a>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Future</a>
+<ul>
+<li><a href="#">c1</a>
+<ul>
+<li><a href="#">c2</a></li>
+<li><a href="#">c2</a></li>
+</ul>
+</li>
+<li><a href="#">c1</a></li>
+</ul> 
+</li>
+<li><a href="#">Team</a>
+<ul>
+<li><a href="#">e1</a>
+<ul class="left">
+<li><a href="#">e2-1</a></li>
+<li><a href="#">e2-1</a></li>
+</ul>
+</li>
+<li><a href="#">e1</a>
+<ul class="left">
+<li><a href="#">e2-2</a></li>
+<li><a href="#">e2-2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<!--nav-->
+    
+    
+    </ul>
+   
+
+<!--nav-->
+    
+    </div>            
+             
+
+  
+
+             
+             
+             
+      
+                   
+             
+             
              
 <!--=========================================-->          
 <div class ="contents">
@@ -180,7 +332,7 @@
              
              
            
-             <h2>Experiment</h2>
+             <div class=topic><h2>Experiment</h2></div>
         <h3>Objective of our experiments<hr></h3>
              <p>Here, we propose a system to realize gel swelling and shrinking, developed on an approach based on DNA hybridization chain reaction(HCR) (See Idea fig.1 for further information about HCR) .<br>
              Our system is what we call Reversible hybridization chain reaction(RHCR), in which DNA strands extending and regressing occur independently from each other. (See Idea for further information about RHCR).<br>

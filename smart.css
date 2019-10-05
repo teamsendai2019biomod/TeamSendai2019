@@ -1,7 +1,7 @@
 /*===============================================
 ●smart.css  画面の横幅が640pxまで
 ===============================================*/
-@media screen and (max-width:415px){
+@media screen and (max-width:767px){
 img{
 max-width: 100%;
 height: auto;
@@ -102,10 +102,10 @@ body{
     
     
 .header{
-    height: 100px;
+    height: 70px;
     width:100%;
     box-shadow: 0 0 15px #ddddd;
-    background-color: white;
+    background-color: none;
     position: fixed;
     top: 0px;
     z-index: 1;
@@ -115,7 +115,7 @@ body{
     height: 30px;
     background-color: #9fb7d4 ;
     text-align: center;
-    display: flex;
+    display: none;
     }
 
 .header-left {
@@ -123,38 +123,40 @@ body{
     font-size: 100%;
     background-color:#121633 ;
     display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
     .head1{
-        margin-right: 10px;
-        margin-left: 0;
+        margin-right: 5px;
+        margin-left:0px;
         height: 70px;
-        width: 270px;
-        background-image: url("images1/hutterdesign1.png");
+        width: 150px;
+        background-image: url("images1/hutter3.png");
         background-repeat: no-repeat;
         background-position: left;
         background-size: contain;
     }
     .head2{
-        font-size: 120%;
-        margin-right: auto;
+        position:left;
+        font-size: 140%;
+        margin-left: 10px;
+        margin-right: 10px;
         height: 50px;
         color: white;
     }
-    .head3{
+   /* .head3{
         height: 50px;
         width: 50px;
-        margin-right: 5px;
+        margin: 5px;
         background-image: url("images1/twitter.png");
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: center;
         background-size: contain;
     }
     .head4{
         height: 50px;
         width: 45px;
-        margin-right: 45px;
+        margin-right: 75px;
         background-image: url("images1/youtube.png");
         background-repeat: no-repeat;
         background-position: left;
@@ -229,26 +231,28 @@ h5{
     
     
 .nav {
-  width: 750px;
-  height: 30px;
+  float: left;
+  width: 50px;
+  height: 220px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  
+  text-align: inherit;
 }
 .nav li {
   position: relative;
   list-style: none;
+  text-align: center;
 }
 .nav li a {
   display: block;
-  width: 150px;
+  width: 130px;
   height: 30px;
   text-align: center;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   background: #9fb7d4;
   transition: 0.5s;
@@ -265,8 +269,8 @@ h5{
   background: #afc6e2;
 }
 .nav li ul {
-  top: 30px;
-  left: -40px;
+  top: 0px;
+  left: 90px;
   position: absolute;
 }
 .nav li ul li {
@@ -283,12 +287,12 @@ h5{
 }
   .nav li ul li ul {
     top: 0;
-    left: 110px;
+    left: 90px;
   }
   .nav li ul li ul:before {/*layer-2▷*/
     position: absolute;
     content: "";
-    top: 15px;
+    top: 5px;
     left: 30px;
     border: 5px solid transparent;
     border-left: 5px solid #fff;
@@ -299,14 +303,14 @@ h5{
   }
   .nav li ul li ul.left {
     top: 0;
-    left: -190px;
+    left: 90px;
   }
   .nav li ul li ul.left:before,/*layer-2-left▷*/
   .nav li ul li ul li ul.left:before {/*layer-3-left▷*/
     position: absolute;
     content: "";
     top: 15px;
-    left: 190px;
+    left: 90px;
     border: 5px solid transparent;
     border-right: 5px solid #fff;
   }
@@ -324,7 +328,7 @@ h5{
   background: #eee;
   margin: 0 auto;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
 }
     
@@ -341,7 +345,7 @@ h5{
 .footer{
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 250px;
     background-color: #121633;
     padding: 0px;
     margin: 0px;
@@ -357,4 +361,102 @@ h5{
     margin-right: 5px;
     background-color: #121633;
 }
+
+
+/*====================================*/
+
+.toggle {
+    position: fixed; /* bodyに対しての絶対位置指定 */
+    right: 13px;
+    top: 13px;
+    display: block;
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
+    background: #ccc;
+}
+.toggle span {
+    display: block;
+    position: absolute; /* .toggleに対して */
+    width: 70%;
+    border-bottom: solid 3px #000;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    padding-top: 5px;
+    right: 7px;
+}
+.toggle span:nth-child(1) {
+    top: 3px;
+}
+.toggle span:nth-child(2) {
+    top: 13px;
+}
+.toggle span:nth-child(3) {
+    top: 23px;
+}
+.toggle span:nth-child(4) {
+    border: none;
+    top: 28px;
+    left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* 最初のspanをマイナス45度に */
+.toggle.active span:nth-child(1) {
+    top: 15px;
+    left: 4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/* 2番目と3番目のspanを45度に */
+.toggle.active span:nth-child(2),
+.toggle.active span:nth-child(3) {
+    top: 15px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* .global_nav */
+.global_nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transform: translateY(-200%);
+    z-index: 2;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #000;
+    background: #121633;
+    transition: all 0.5s; 
+    text-justify:auto;
+}
+.global_nav .nav_li {
+    width: 100%;
+    padding: 10px;
+    list-style-type: none;
+}
+.global_nav .nav_li a {
+    display: block;
+    color: whitesmoke;
+}
+.global_nav .li  {
+    display: block;
+    color: whitesmoke;
+}
+
+
+
+
+/* .global_navに.activeが追加 */
+.global_nav.active {
+    transform: translateY(0%);
 }

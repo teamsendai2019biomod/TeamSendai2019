@@ -1,7 +1,7 @@
 /*===============================================
-●style.css 画面の横幅が769px以上
+●style.css 画面の横幅が940px以上
 ===============================================*/
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 768px){
 img{
 max-width: 100%;
 height: auto;
@@ -103,24 +103,36 @@ body{
     
     
 .header{
-    height: 100px;
+    height: 120px;
     width:100%;
     box-shadow: 0 0 15px #ddddd;
-    background-color: white;
+    background-color: lightpink;
     position: fixed;
     top: 0px;
     z-index: 1;
     display: inline-block;
+    transition: .7s;
 }
+    
+    
+
+.header.hide{
+    transform: translateY(-100%);
+}    
+    
+    
+    
+    
+    
 .header-right{
-    height: 30px;
+    height: 40px;
     background-color: #9fb7d4 ;
     text-align: center;
     display: flex;
     }
 
 .header-left {
-    height:70px;
+    height:90px;
     font-size: 100%;
     background-color:#121633 ;
     display: flex;
@@ -130,8 +142,8 @@ body{
     .head1{
         margin-right: 10px;
         margin-left: 0;
-        height: 70px;
-        width: 270px;
+        height: 90px;
+        width: 350px;
         background-image: url("images1/hutterdesign1.png");
         background-repeat: no-repeat;
         background-position: left;
@@ -144,22 +156,33 @@ body{
         color: white;
     }
     .head3{
+        height: 70px;
+        width: 70px;
+        margin-right: 5px;
+        background-image: url(images1/Twittericon1.jpg); 
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        -webkit-transition: all 0.5s;
+     　　transition: all 0.5s;
+    }
+    .head3>a{
         height: 50px;
         width: 50px;
-        margin-right: 5px;
-        background-image: url("images1/twitter.png");
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: contain;
+        
+        
+        
     }
     .head4{
-        height: 50px;
-        width: 45px;
+        height: 70px;
+        width: 70px;
         margin-right: 45px;
-        background-image: url("images1/youtube.png");
+        background-image: url("images1/youtubeicon1.jpg");
         background-repeat: no-repeat;
         background-position: left;
         background-size: contain;
+        -webkit-transition: all 0.5s;
+     　　transition: all 0.5s;
     }
 /* ============================ header dropdown ============================== */
 
@@ -167,24 +190,34 @@ body{
 /* ============================ header dropdown ============================== */
 
 /* ============================ bottan  ======================================== */    
-.btn-square {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #668ad8;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
+
+.head3:hover{
+     background-image: url(images1/twittericon2.jpg); /*ボタン色*/
 }
-.btn-square:active {
-  /*ボタンを押したとき*/
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+    .head4:hover{
+     background-image: url(images1/youtubeicon2.jpg); /*ボタン色*/
 }
     
 /* ============================ bottan  ======================================== */    
-
+.global_nav {
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #000;
+    background: #afc6e2;
+    transition: all 0.5s; 
+    text-justify: inherit;
+    transition: .5s;
+} 
+    .global_nav.hide{
+        transform: translateY(-195%)
+        
+    }
 
 
 
@@ -201,12 +234,23 @@ p{
 h2{
     font-size: 2.5em;
     color:black;
-    border:#2f3a44 3px solid;  
-    border-left:#2f3a44 10px solid;  
+    border:#2f3a44 0px solid;  
+    border-bottom: pink 2px solid;  
     padding: 5px 30px;
     margin-bottom: 0;
+    margin-left: 20px;
+    
 }
 
+.topic{
+    }    
+    
+.topic{
+        background-image:  url("images1/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+}
 h3{ font-size:2em;
     color: black;
     margin-top: 0.5em;
@@ -231,33 +275,47 @@ h5{
     
     
 .nav {
-  width: 750px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
+
+.nav.hide{
+     transform: translateY(-200%);
+}
+
 .nav li {
   position: relative;
   list-style: none;
 }
 .nav li a {
   display: block;
-  width: 150px;
-  height: 30px;
+  min-width: 100%;
+  width: 118px;
+  height: 50px;
   text-align: center;
   color: #fff;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 50px;
   background: #9fb7d4;
   transition: 0.5s;
   text-decoration: none;
-  border-right: 1px solid #eee;
+  border: 1px solid #eee;
   box-sizing: border-box;
+  border-radius:6px;
 }
+    .nav li ul a{
+        width: 200px;
+        font-size: 16px;
+        height: 45px;
+        line-height:40px;
+    }
+    
+    
 .nav > li:hover > a {/*layer-1*/
   color: orange;
   background: #afc6e2;
@@ -267,7 +325,7 @@ h5{
   background: #afc6e2;
 }
 .nav li ul {
-  top: 30px;
+  top: 50px;
   left: -40px;
   position: absolute;
 }
@@ -281,16 +339,16 @@ h5{
 }
 .nav li:hover > ul > li {
   overflow: visible;
-  height: 30px;
+  height: 45px;
 }
   .nav li ul li ul {
     top: 0;
-    left: 110px;
+    left: 160px;
   }
   .nav li ul li ul:before {/*layer-2▷*/
     position: absolute;
     content: "";
-    top: 15px;
+    top: 18px;
     left: 30px;
     border: 5px solid transparent;
     border-left: 5px solid #fff;
@@ -301,14 +359,14 @@ h5{
   }
   .nav li ul li ul.left {
     top: 0;
-    left: -190px;
+    left: -240px;
   }
   .nav li ul li ul.left:before,/*layer-2-left▷*/
   .nav li ul li ul li ul.left:before {/*layer-3-left▷*/
     position: absolute;
     content: "";
     top: 15px;
-    left: 190px;
+    right: -10px;
     border: 5px solid transparent;
     border-right: 5px solid #fff;
   }
@@ -343,7 +401,7 @@ h5{
 .footer{
     bottom: 0;
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: #121633;
     padding: 0px;
     margin: 0px;
@@ -360,4 +418,20 @@ h5{
     margin: 0px; 
     background-color: #121633;
 }
-}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*====================================*/
+/*====================================*/
+
