@@ -84,25 +84,7 @@
     </script>
     
     
-    <script>
-$(document).ready(function() {
-  var pagetop = $('.pagetop');
-    $(window).scroll(function () {
-       if ($(this).scrollTop() > 100) {
-            pagetop.fadeIn();
-       } else {
-            pagetop.fadeOut();
-            }
-       });
-       pagetop.click(function () {
-           $('body, html').animate({ scrollTop: 0 }, 500);
-              return false;
-   });
-});
-</script>
     
-    
- 
     
       <body>
 <!-- =======================header====================================================== -->    
@@ -119,7 +101,17 @@ $(document).ready(function() {
 </div>
         </div>
           
-<div class="toggle">
+    
+          
+<!-- ========================main====================================================== -->        
+     <div class="main">
+         
+         <div class="container">
+             <p><br><br></p>
+             
+             
+
+ <div class="toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -136,9 +128,9 @@ $(document).ready(function() {
    
         
     <ul class="nav"> 
-<li><a href="index.html">Home</a>
+<li><a href="#">Home</a>
     <ul>
-        <li><a href="index.html/#">Abstruct</a></li>
+        <li><a href="#">Abstruct</a></li>
         <li><a href="#">Youtube</a>
         
         </li>
@@ -161,56 +153,58 @@ $(document).ready(function() {
     </ul>
 </li>
 
-<li><a href="simulation.html">Simulation</a>
+<li><a href="#">Simulation</a>
     <ul>
-<li><a href="simulation.html/#">Free energy estimation</a></li>
-<li><a href="simulation.html/#">Reaction rate simulation</a>
+<li><a href="#">free energy estimation</a></li>
+<li><a href="#">Reaction rate simulation</a>
 <ul>
 <li><a href="#">d2</a></li>
 <li><a href="#">d2</a>
-
-</li>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="experiment.html">Experiment</a>
+</ul>
+</li>
+<li><a href="#">Experiment</a>
     <ul>
-<li><a href="experiment.html">HCR</a></li>
-<li><a href="experiment.html">RHCR</a>
+<li><a href="#">HCR</a></li>
+<li><a href="#">RHCR</a>
+<ul>
+<li><a href="#">d2</a></li>
+<li><a href="#">d2</a>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#">Future</a>
 <ul>
-<li><a href="#">e1</a>
-<ul class="left">
-<li><a href="#">e2-1</a></li>
-<li><a href="#">e2-1</a></li>
-</ul>
-</li>
-<li><a href="#">e1</a>
-<ul class="left">
-<li><a href="#">e2-2</a></li>
-<li><a href="#">e2-2</a></li>
-</ul>
-</li>
-</ul>
-</li>        
-<li><a href="team.html">Team</a>
+<li><a href="#">c1</a>
 <ul>
-<li><a href="#">Member</a>
+<li><a href="#">c2</a></li>
+<li><a href="#">c2</a></li>
+</ul>
+</li>
+<li><a href="#">c1</a></li>
+</ul> 
+</li>
+<li><a href="#">Team</a>
+<ul>
+<li><a href="#">e1</a>
 <ul class="left">
 <li><a href="#">e2-1</a></li>
 <li><a href="#">e2-1</a></li>
 </ul>
 </li>
-<li><a href="#">Menter</a>
-<ul class="left">
-<li><a href="#">e2-1</a></li>
-<li><a href="#">e2-1</a></li>
-</ul>
-</li>
-<li><a href="#">Supecial Thanks</a>
+<li><a href="#">e1</a>
 <ul class="left">
 <li><a href="#">e2-2</a></li>
 <li><a href="#">e2-2</a></li>
@@ -218,36 +212,15 @@ $(document).ready(function() {
 </li>
 </ul>
 </li>
-</li>
-
 <!--nav-->
-    <div class="box1">
-<a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
-    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
-"><div class ="yt1">YouTube</div></a>  </div>       
-
-        
-              
-          </div>
-
-    </ul>   
+    
+    
+    </ul>
+   
 
 <!--nav-->
     
-    </div>  
-          
-          
-          
-<div class="main-visual"></div>
-          
-<!-- ========================main====================================================== -->        
-    <div class="main"> 
-         
-         <div class="container">
-             
-        
-
-           
+    </div>            
              
 
   
@@ -260,8 +233,7 @@ $(document).ready(function() {
              
              
              
-<!--=========================================-->  
-
+<!--=========================================-->          
 <div class ="contents">
 
              
@@ -269,39 +241,102 @@ $(document).ready(function() {
              
              
            
-             <div class=topic><h2>Abstruct</h2></div>
+             <div class=topic><h2>Experiment</h2></div>
+        <h3>Objective<hr></h3>
+             <p><br><br><br>
+             </p>
             
-        
-        
+        <h3>Purpose &amp; Method<hr></h3>
+             <p><br><br><br>
+             </p>
+        <h3>Results &amp; Discussion<hr></h3>
+            
+             <div class="imagegazo">
+                  <img src="imexperiment/yoshino3.png" id="gazo"   
+                width="100%" border="1" alt="">
+                 <p>Fig.</p>
+             </div>
+             
+             <p> <br>
+                 <br><br><br>
+             </p>
+             
+             
+             <div class="imagegazo"> 
+              <img src="imexperiment/yoshino4.png" id="gazo"
+                width="100%" border="1" alt="">
+             </div>
+         
+         <div class="image70">
+                 <p>A</p><img src="imexperiment/hanten.png" id="gazo"   
+                  width="100%" border="1" alt="">
+                 <p>B</p><img src="imexperiment/Fig.3B.png" id="gazo"   
+                width="100%" border="1" alt="">
+         <p>Fig.3</p>
+             <br><br>
+             <br><br>
+         </div>
+    
           </div>
           </div>
     
     <div class="main2">
+         
          <div class="container">
-             <div class=topic><h2>YouTube</h2></div>
-        <div class="movie-wrap">
-            <iframe width="854" height="480" src="https://www.youtube.com/embed/iZwVc78QNYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-       <br><br><br>
-        </div></div> 
+             
+             
+             
+             <p>
+                    (See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for further information about the experiments)
+</p>
+                 <h5>Incubation time (Fig.S1)</h5>
+                 <h5>Thermo condition</h5>
+                 <h5>Hairpin DNAs concentration</h5>
+                 <h5>Reaction limitation by R’</h5>
+                 </div></div>
+          
+          <div class="main">
+         
+         <div class="container">
+             <p>Confirm the most stable structure of our DNA by annealing.(Fig.4)(See <a href="Material.html" style="font-size: 24px;">Material &amp; Method</a> for
+further information about annealing)</p>
+             
+            <div class="image70">
+                <p>A</p>    
+                <img src="imexperiment/Fig.4A.png" id="gazo"   
+                width="100%" border="1" alt="">
+                <p>B</p>    
+                <img src="imexperiment/Fig.4B.png" id="gazo"   
+                width="100%" border="1" alt="">
+                 <p>Fig.4
+                 </p> 
+             </div>
+            <h3>Summary<hr></h3>
+            <p>
+                During the first half of our experiment, HCR progression was observed. Although we found out
+that our DNA doesn’t form polymer as a stable structure during the latter half of the experiment, we
+conducted some other experiments to find out the better experimental condition to confirm HCR. (See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for other electrophoresis results). Thus, there is a high possibility that we
+could replicate the gel swelling and shrinking in our future experiment.
+            </p>
+                 
+            <h3>Information<hr></h3>
+            
+           <a href="supplementary.html" class="btn-square">Supplementary information</a>
+            
+           <a href="Material.html" class="btn-square">Material &amp; Method</a>
+             
 
+             
+            
+</div>
+</div>   
 <!-- =============================================================== -->      
         <div class="footer">
-            
-            <p class="pagetop"><a href="#wrap">▲<br>Top</a></p>
-            
                  <div class="footer-left">
-                     <a href="https://www.tohoku.ac.jp/en/"><div class="tohokuicon"></div></a>
-                     <a href="http://www.molbot.mech.tohoku.ac.jp/eng/index.html"><div class="labicon"></div></a>
-                     <a href=""><div class=""></div></a>
-                 <div class="box2">
-<a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
-    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
-"><div class ="yt1">YouTube</div></a>  </div>     
                     
                  </div>
                  <div class="footer-right">
-                     &copy;Team Sendai 2019
+                     &copy;2019 TEAM SENDAI
                  </div>
                  <div class="clear"></div>
               </div>  

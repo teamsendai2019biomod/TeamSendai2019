@@ -1,13 +1,9 @@
 .main-visual{
-    margin:auto;
-    width:100%;
-    height:600px;
-    float:center;
-    padding-top: 140px;
-    padding-bottom: 100px;
+    max-width: 100%;
+    height: 400px;
+    padding-top: 0px;
     background-image: url("images1/mainwikide1.png");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: cover;
     color:ghostwhite;
     text-align: right;
@@ -32,6 +28,22 @@
 }
 
 
+
+
+.movie-wrap {
+     position: relative;
+     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+     height: 0;
+     overflow: hidden;
+}
+ 
+.movie-wrap iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
 
 
 

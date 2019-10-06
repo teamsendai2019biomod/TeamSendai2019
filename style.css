@@ -27,13 +27,13 @@ body{
 }
 .main2{
     background-color: lavenderblush;
-    padding:100px 0px 50px 0px;
+    padding:30px 0px 80px 0px;
     border:red 0px solid;
     margin: auto;
 }
 .main3{
     background-color: lavender;
-    padding:100px 0px 50px 0px;
+    padding:50px 0px 50px 0px;
     border:red 0px solid;
     margin: 0px;
 }
@@ -68,6 +68,21 @@ body{
     font-size:18px;
 }
 .table1>li{
+}
+    
+.movie-wrap {
+     position: relative;
+     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+     height: 0;
+     overflow: hidden;
+}
+ 
+.movie-wrap iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
 }
 
     
@@ -106,7 +121,7 @@ body{
     height: 120px;
     width:100%;
     box-shadow: 0 0 15px #ddddd;
-    background-color: lightpink;
+    background-color: #207090;
     position: fixed;
     top: 0px;
     z-index: 1;
@@ -198,7 +213,8 @@ body{
      background-image: url(images1/youtubeicon2.jpg); /*ボタン色*/
 }
     
-/* ============================ bottan  ======================================== */    
+/* ============================ bottan  ======================================== */  
+    .box1{display: none}    
 .global_nav {
     position: fixed;
     top: 90px;
@@ -306,14 +322,14 @@ h5{
   text-decoration: none;
   border: 1px solid #eee;
   box-sizing: border-box;
-  border-radius:6px;
+  border-radius:3px;
 }
-    .nav li ul a{
+.nav li ul a{
         width: 200px;
         font-size: 16px;
         height: 45px;
         line-height:40px;
-    }
+}
     
     
 .nav > li:hover > a {/*layer-1*/
@@ -405,23 +421,85 @@ h5{
     background-color: #121633;
     padding: 0px;
     margin: 0px;
+    display: flex;
 }
-.footer-left{
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.pagetop a {
+    display: block;
+    background-color: #ccc;
+    text-align: center;
+    color: #222;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    border-radius:6px;
+}
+.pagetop a:hover {
+    display: block;
+    background-color: #b2d1fb;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding:5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
     
-}  
+.footer-left{
+    display: inline-flex;
+    width:60%;
+    
+} 
+    .tohokuicon{
+        margin:30px;
+        margin-top: 60px;
+        margin-left: 100px;
+        width: 80px;
+        height: 80px;
+        background-image: url(images1/tohokuicon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius:6px;
+    }
+    .labicon{
+        margin:30px;
+        margin-top: 60px;
+        margin-left: 10px;
+        width: 60px;
+        height: 78px;
+        background-image: url(images1/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius:6px;
+    }
 .footer-right {
     color: #e8e8e8;
     font-size:24px;
     float: right;
-    padding-top:90px;
-    padding-right: 50px;
-    margin: 0px; 
+    margin-top:120px;
+    right: 130px;
+    padding: 0px; 
     background-color: #121633;
 }
 
     
+ .box2{
+        display:none;
+        
+    }
     
-    
+
     
     
     

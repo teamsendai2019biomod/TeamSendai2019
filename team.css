@@ -1,0 +1,27 @@
+.topic{}
+
+.member1{
+    display: flex;
+}
+.TMl{
+    min-width:200px;
+    min-height: 200px;
+    max-width: 210px;
+    max-height: 210px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+    
+}
+.TMl1{
+    width:200px;
+    height: 200px;
+    background-image: url(images1/yoshino.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+}
+.TMr{}
+                     

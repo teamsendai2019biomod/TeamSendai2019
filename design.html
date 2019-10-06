@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DNA muscle ~powered by DNA | BIOMOD2019</title>
+    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
+        
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<link rel="stylesheet" media="all" type="text/css" href="style.css" />
+<!-- ※デフォルトのスタイル（style.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="tablet.css" />
+<!-- ※タブレット用のスタイル（tablet.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+<!-- ※スマートフォン用のスタイル（smart.css） -->
+        
+        
+        <link rel="stylesheet" href="experimentwiki.css">
+        
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="reponsive.css">
+        
+        <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+        
+        
+        
+    </head> 
+    
+    
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+  
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     
+ <script> 
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+<script>    
+    $(function() {
+  $('.toggle').click(function() {
+    $(this).toggleClass("active");
+		if($(this).hasClass('active')) {
+			$('.global_nav').addClass('active');
+		} else {
+			$('.global_nav').removeClass('active');
+		}
+  });
+});
+    </script>    
+    
+    
+<!--============閉会ボタン===========================-->
+<script>
+   $(function(){
+   $("ul.children").after("<span class='accordionBtn'></span>");
+   $("ul.children").hide();
+   $("ul .accordionBtn").on("click", function() {
+     $(this).prev("ul").slideToggle();
+     $(this).toggleClass("active");
+   });
+});    
+    </script>
+    
+    
+<!--==================================================-->
+  <script>
+      var startPos = 0,winScrollTop = 0;
+    $(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header').addClass('hide');
+        $('.global_nav').addClass('hide');
+    } else {
+        $('.header').removeClass('hide');
+        $('.global_nav').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+    </script>
+    
+    
+    
+    
+      <body>
+<!-- =======================header====================================================== -->    
+          
+          <div class="header">
+
+            
+<div class="header-left">
+    <div class="head1"></div>
+    <div class="head2"><a><a>RHCR<br>TeamSendai</a></a></div>
+    <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
+"><div class="head4"></div></a> 
+</div>
+        </div>
+
+
+
+
+<!-- ========================main====================================================== -->        
+     <div class="main">
+         
+         <div class="container">
+            
+                     
+
+ <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>        
+
+                         
+ <div class="global_nav"> 
+   <!-- <div class="glnavleft">
+    <li class="nav_li"><a href="#menu1">メニュー1</a></li>
+    <li class="nav_li"><a href="#menu2">メニュー2</a></li>
+    <li class="nav_li"><a href="#menu3">メニュー3</a></li>
+    </div>     -->
+   
+        
+    <ul class="nav"> 
+<li><a href="#">Home</a>
+    <ul>
+        <li><a href="#">Abstruct</a></li>
+        <li><a href="#">Youtube</a>
+        
+        </li>
+    </ul>
+</li>
+
+<li><a href="#">Background</a>
+    <ul>
+        <li><a href="#">Motivation</a></li>
+        <li><a href="#">Merit</a></li>
+        <li><a href="#">Problem&#33Solution</a></li>
+    </ul>
+</li>
+<li><a href="#">Design</a>
+    <ul>
+        <li><a href="#">HCR</a></li>
+        <li><a href="#">RHCR</a>
+            
+        </li>
+    </ul>
+</li>
+
+<li><a href="#">Simulation</a>
+    <ul>
+<li><a href="#">free energy estimation</a></li>
+<li><a href="#">Reaction rate simulation</a>
+<ul>
+<li><a href="#">d2</a></li>
+<li><a href="#">d2</a>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Experiment</a>
+    <ul>
+<li><a href="#">HCR</a></li>
+<li><a href="#">RHCR</a>
+<ul>
+<li><a href="#">d2</a></li>
+<li><a href="#">d2</a>
+<ul class="left">
+<li><a href="#">d3</a></li>
+<li><a href="#">d3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Future</a>
+<ul>
+<li><a href="#">c1</a>
+<ul>
+<li><a href="#">c2</a></li>
+<li><a href="#">c2</a></li>
+</ul>
+</li>
+<li><a href="#">c1</a></li>
+</ul> 
+</li>
+<li><a href="#">Team</a>
+<ul>
+<li><a href="#">e1</a>
+<ul class="left">
+<li><a href="#">e2-1</a></li>
+<li><a href="#">e2-1</a></li>
+</ul>
+</li>
+<li><a href="#">e1</a>
+<ul class="left">
+<li><a href="#">e2-2</a></li>
+<li><a href="#">e2-2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<!--nav-->
+    
+    
+    </ul>
+   
+
+<!--nav-->
+    
+    </div>            
+ <!--n========================================================--->            
+
+       
+             
+             <p><br><br></p>
+             <h2>Design</h2>
+             <p>  
+             <br>
+                To realize the hydrogel that exhibits swelling and shrinking like muscles in response to a
+DNA signal, the polymer constituting the gel is crosslinked with an actuator DNA complex
+that exhibits extending and regression. Regarding swelling, some effective way to swell
+hydrogel while maintaining the crosslinking points has already been reported [2]. These
+reactions are indeed efficient and effective, but it lacks shrinking ability that enable reversible
+and repeatable movement. Therefore, we decided to design a novel HCR called RHCR
+(Reversible HCR) that can cause extending (fig. 3) and regressing (fig. 4).
+Before going to the exposition of RHCR, we will explain about HCR below, which is the
+based idea of RHCR.(fig. 1).
+            
+                 
+                 
+             <br><br>
+             </p>
+             <h4>Principle of HCR maintaining the cross-linking point</h4>
+             <div class="imagegazo">
+             <img src="imdesign/designfig1kai.png"  
+                width="100%"  border="0" alt="">
+             
+                 <p>fig. 1 Principle of HCR maintaining the cross-linking point</p>
+             
+             </div>
+            
+             <p>
+              <br>DNA A and DNA R are the cross-linking points of the ge in the initial state. In a HCR that
+maintains the cross-linking point, hairpin H1 binds to a single-stranded toe-hold section of A
+and R, and then a four-way branch migration follows (state 2-3). As a result, R switches from
+A to H1 (state 4). H2 binds to the newly exposed toe-hold end of H1, and a four-way branch
+migration occurs again (state 6-7). This replaces R from H1 to H2 (state 8). In the result of
+this reaction, H1 hybridize to the newly exposed sticky ends a* and x* again, which leads to
+a four-way branch migration.
+             <br>
+            
+By this cycle, the DNA complex extends while maintaining the crosslinking point.
+Because there is no toehold left on the A side, regression can not be realized by HCR. In
+order to carry out regression by HCR, we inserted d, e, f, g, and h domains into our designed
+DNA.The reaction flow is below.
+             
+                    
+             <br>
+             <br>
+             <br><br>
+             </p>
+              </div> 
+          </div>
+        <a name="elongation"></a>
+        <div class="main2"> 
+         <div class="container">
+             <div class="imagegazo">
+             <h4>RHCR extending reaction</h4>
+             <img src="im伸張/スライド1.JPG"  id="gazoe"  
+                width="100%"  border="5" alt="">
+             <div class ="tableRHCR0">
+                    <ul class="tableRHCR1">
+                        <li><a href="#panel1" onclick="changeIMG1e()"><<</a></li>
+                        <li><a href="#panel2" onclick="changeIMG2e()"><</a></li>
+                        <li><a href="#panel3" onclick="changeIMG3e()">></a></li>
+                        <li><a href="#panel4" onclick="changeIMG4e()">>></a></li>
+                    </ul>
+             </div>
+             
+             
+<script>
+//画像を配列に格納する
+var im = new Array();
+
+    for (var i =0; i<18;i++){
+            im[i] = new Image(); im[i].src="im伸張/スライド"+(i+1)+".JPG";
+    }
+    
+//画像番号用のグローバル変数
+    var cnte=0;
+//画像切り替え関数 
+    function changeIMG1e(){
+        cnte=0; 
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+      
+    function changeIMG2e(){
+        if (cnte == 0 )
+        { cnte=0; }
+        else
+        { cnte--; }
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+    
+    function changeIMG3e(){
+        if (cnte == 17 )
+        { cnte=17; }
+        else
+        { cnte++; }
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+
+    function changeIMG4e(){
+        cnte=17; 
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+</script>
+            
+             <p>
+                 fig.2 RHCR extending reaction
+             </p>
+             </div>
+                <p>
+                    
+            ＜RHCR extending reaction＞<br>
+1. H1 approaches crosslinking point<br>
+2. H1 binds to sticky ends of A and R<br>
+3. A four-way branch migration occurs<br>
+4. The R hybridization bonds are switched from A to H1<br>
+5. H2 approaches crosslinking point<br>
+6. H2 binds to Sticky Ends of A and R<br>
+7. A four-way branch migration occurs<br>
+8. The R hybridization bonds are switched from H1 to H2<br>
+9. H1 approaches crosslinking point<br>
+10. H1 domain a and domain x* bind with domain a* of H2 and the domain x of R<br>
+11. A four-way branch migration occurs<br>
+12. The R hybridization bonds are switched from H2 to H1<br>
+13. H2 joins domain c* and domain y with domain c of H1 and the domain y* of R as the
+toehold<br>
+14. A four-way branch migration occurs<br>
+15. The R hybridization bonds are switched from H1 to H2<br>
+             <br>
+
+             
+             </p>
+             <p>In the result of this reaction, the toeholds of oligonucleotide on step 15 has the same
+structure as slide 1. With this cycle, the HCR extends toward right while maintaining the cross-
+linking point. In contrast to conventional HCR, in our designed DNA we have toeholds for another
+hairpin DNAs called EH1 (H1 eraser), which regress HCR by being added.
+The regressive reaction flow is shown below.</p>
+             
+              </div>
+        </div>
+          
+         
+       <a name="regression"></a>  
+      <div class="main">    
+         <div class="container">
+             <div class="imagegazo">
+             <h4>RHCR regression reaction</h4>
+             <img src="im退縮/スライド1.JPG" id="gazo"   
+                width="100%" border="5" style="" alt="">
+             <div class ="tableRHCR0">
+                    <ul class="tableRHCR1">
+                        <li><a href="#panel1"  onclick="changeIMG1()"><<</a></li>
+                        <li><a href="#panel2" onclick="changeIMG2()"><</a></li>
+                        <li><a href="#panel3" onclick="changeIMG3()">></a></li>
+                        <li><a href="#panel4" onclick="changeIMG4()">>></a></li>
+                    </ul>
+             </div>
+             
+             
+<script>
+//画像を配列に格納する
+var img = new Array();
+    for(var i=0;i<24;i++){
+    img[i] = new Image(); img[i].src="im退縮/スライド"+(i+1)+".JPG";
+    }
+    
+   
+//画像番号用のグローバル変数
+var cnt=0;
+//画像切り替え関数 
+    function changeIMG1(){
+        cnt=0; 
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+      
+    function changeIMG2(){
+        if (cnt == 0 )
+        { cnt=0; }
+        else
+        { cnt--; }
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+    
+    function changeIMG3(){
+        if (cnt == 23 )
+        { cnt=23; }
+        else
+        { cnt++; }
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+
+    function changeIMG4(){
+        cnt=23; 
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+</script>
+             <p>
+                 fig. 3 RHCR regressive reaction
+             </p>
+             </div>        
+                <p>
+                       ＜RHCR regressive reaction＞<br>
+1. EH1 approaches crosslinking point<br>
+2. EH1 toehold hybridizes with the e domain of H1 and the d domain of A<br>
+3. A four-way branch migration occurs<br>
+4. The hybridization continues further by the opening ring of c* in EH1<br>
+5. EH1-H1 releaser approaches crosslinking point<br>
+6. EH1-H1 releaser bind with the toehold in EH1<br>
+7. EH1 and A are untied<br>
+8. EH1 and H1 are released from crosslink<br>
+9. The dangling end of A hybridizes with H1<br>
+10. A hybridizes with H1 untied bond of H1 and H2<br>
+11. H2 is released from crosslink<br>
+12. Another EH1 approaches crosslinking point
+                    
+             <br>
+             <br>
+             </p>
+             
+             <p>
+                In the result of this reaction, the toeholds of oligonucleotide on step 21 has the same
+structure as slide 1. The difference is that the sequence has been shortened with H1 and H2
+being released from the sequence. Then, this reaction repeats until the last H2 in the
+
+sequence because the f* domain in the H2 is needed to release the other H2 as shown in
+slide 19.<br><br>
+             </p>
+           
+          
+</div>
+          </div>
+          
+           <div class="main2"> 
+              <div class="container">
+              
+             <p>
+                  If H1 and H2 are present in this state, the extending reaction starts again on the R side, and
+RHCR shows a dynamic behavior that extends and regresses in response to DNA signals. If
+H1 and H2 do not exist, RHCR is maintained in a regressive state. The final state shown in
+fig. 5 is at least 8nm shorter than the original state of several H1 and H2 in series, so we can
+insist that RHCR has a regressive function.
+                  
+                  </p>
+            <div class="image70">      
+              <img src="imdesign/kousin1.png"   
+                width="80%"  border="0" alt="">
+                 <p>fig.4 Final state of regression reaction<br><br><br></p>     
+            </div>
+             
+                  
+             
+              </div>   
+         
+         
+         
+         
+  
+         </div>
