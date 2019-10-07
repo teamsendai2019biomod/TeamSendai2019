@@ -15,6 +15,7 @@ body{
     font-family: 'arial',sans-serif;
     font-size: 100%;
     margin: 0;
+    ontouchstart="";
 }
     
 .main{
@@ -483,10 +484,10 @@ h5{
     
 
 .footer-right {
-    font-size: 20px;
+    font-size: 16px;
     color: #e8e8e8;
     float:right;
-    margin:5px 15px 5px 150px;
+    margin:20px 15px 5px 150px;
     background-color: #121633;
 }
 
