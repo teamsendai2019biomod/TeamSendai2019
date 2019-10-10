@@ -278,12 +278,12 @@ h5{
   border: 1px solid #eee;
   box-sizing: border-box;
 }
-.nav > li:active > a {/*layer-1*/
+.nav > li:hover > a {/*layer-1*/
   color: orange;
   background: #afc6e2;
   width: 60%;
 }
-.nav > li li:active > a {/*layer-2*/
+.nav > li li:hover > a {/*layer-2*/
   color: olive;
   background: #afc6e2;
   width: 100%;
@@ -303,7 +303,7 @@ h5{
   border-top: 1px solid #eee;
 }
     .nav li ul li ul a{display: none;}
-.nav li:active > ul > li {
+.nav li:hover > ul > li {
   overflow: visible;
   height: 40px;
 }
@@ -318,7 +318,7 @@ h5{
     left: 130px;
     
   }
-  .nav li ul li ul li:active > a {/*layer-3*/
+  .nav li ul li ul li:hover > a {/*layer-3*/
     height: 30px;
     color: pink;
     background: #red;
@@ -328,17 +328,17 @@ h5{
     top: 0px;
     left: 90px;
   }
-  .nav li ul li ul.left:before,/*layer-2-left▷*/
-  .nav li ul li ul li ul.left:before {/*layer-3-left▷*/
+  .nav li ul li ul.left:before;/*layer-2-left▷*/
+  .nav li ul li ul li ul.left:before { /*layer-3-left▷*/
     content: "";
     top: 5px;
     left: 90px;
   }
-  .nav li ul li ul.left li:active > a {/*layer-2-left*/
+  .nav li ul li ul.left li:hover > a {/*layer-2-left*/
     color: pink;
     background: #afc6e2;
   }
-  .nav li ul li ul li ul.left li:active > a {/*layer-3-left*/
+  .nav li ul li ul li ul.left li:hover > a {/*layer-3-left*/
     color: purple;
     background: #afc6e2;
   }
