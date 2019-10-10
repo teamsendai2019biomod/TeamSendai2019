@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>DNA muscle ~powered by DNA | BIOMOD2019</title>
+        <title>Jack and DNA stalk |BIOMOD2019</title>
     <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
         
         <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
@@ -84,7 +84,25 @@
     </script>
     
     
+    <script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
     
+    
+ 
     
       <body>
 <!-- =======================header====================================================== -->    
@@ -94,24 +112,14 @@
             
 <div class="header-left">
     <div class="head1"></div>
-    <div class="head2"><a><a>RHCR<br>TeamSendai</a></a></div>
+    <div class="head2"><a><a>TeamSendai<br>Jack and DNA stalk</a></a></div>
     <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
     <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
 "><div class="head4"></div></a> 
 </div>
         </div>
           
-    
-          
-<!-- ========================main====================================================== -->        
-     <div class="main">
-         
-         <div class="container">
-             <p><br><br></p>
-             
-             
-
- <div class="toggle">
+<div class="toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -119,7 +127,7 @@
     </div>        
 
                          
- <div class="global_nav"> 
+ <div class="global_nav" body ontouchstart=""> 
    <!-- <div class="glnavleft">
     <li class="nav_li"><a href="#menu1">メニュー1</a></li>
     <li class="nav_li"><a href="#menu2">メニュー2</a></li>
@@ -128,95 +136,72 @@
    
         
     <ul class="nav"> 
-<li><a href="#">Home</a>
+        <li><a href="index.html">Home</a>
     <ul>
-        <li><a href="#">Abstruct</a></li>
-        <li><a href="#">Youtube</a>
+        <li><a href="index.html#a1">Abstruct</a></li>
+        <li><a href="index.html#a2">Youtube</a>
         
         </li>
     </ul>
 </li>
 
-<li><a href="#">Background</a>
+<li><a href="background.html">Background</a>
     <ul>
-        <li><a href="#">Motivation</a></li>
-        <li><a href="#">Merit</a></li>
-        <li><a href="#">Problem&#33Solution</a></li>
+        <li><a href="background.html#b1">Motivation</a></li>
+        <li><a href="background.html#b2">Merit</a></li>
+        <li><a href="background.html#b3">Problem&amp;Solution</a></li>
     </ul>
 </li>
-<li><a href="#">Design</a>
+<li><a href="design.html">Design</a>
     <ul>
-        <li><a href="#">HCR</a></li>
-        <li><a href="#">RHCR</a>
+        <li><a href="design.html#c1">HCR</a></li>
+        <li><a href="design.html#c2">RHCR</a>
             
         </li>
     </ul>
 </li>
 
-<li><a href="#">Simulation</a>
+<li><a href="simulation.html">Simulation</a>
     <ul>
-<li><a href="#">free energy estimation</a></li>
-<li><a href="#">Reaction rate simulation</a>
-<ul>
-<li><a href="#">d2</a></li>
-<li><a href="#">d2</a>
-<ul class="left">
-<li><a href="#">d3</a></li>
-<li><a href="#">d3</a></li>
-</ul>
+<li><a href="simulation.html#d1">Free energy estimation</a></li>
+<li><a href="simulation.html#d2">Reaction rate simulation</a>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#">Experiment</a>
+<li><a href="experiment.html">Experiment</a>
     <ul>
-<li><a href="#">HCR</a></li>
-<li><a href="#">RHCR</a>
+<li><a href="experiment.html#e1">HCR</a></li>
+<li><a href="experiment.html#e2">RHCR</a>
+</ul>
+</li>
+<li><a href="future.html">Future</a>
+
+</li>        
+<li><a href="team.html">Team/ELSI</a>
 <ul>
-<li><a href="#">d2</a></li>
-<li><a href="#">d2</a>
-<ul class="left">
-<li><a href="#">d3</a></li>
-<li><a href="#">d3</a></li>
-</ul>
+<li><a href="team.html#g1">Member</a>
+</li>
+<li><a href="team.html#g2">Menter</a>
+</li>
+<li><a href="team.html#g3">Supecial Thanks</a>
+<li><a href="elsi.html">ELSI</a>
+</li>
 </li>
 </ul>
 </li>
-</ul>
 </li>
-<li><a href="#">Future</a>
-<ul>
-<li><a href="#">c1</a>
-<ul>
-<li><a href="#">c2</a></li>
-<li><a href="#">c2</a></li>
-</ul>
-</li>
-<li><a href="#">c1</a></li>
-</ul> 
-</li>
-<li><a href="#">Team</a>
-<ul>
-<li><a href="#">e1</a>
-<ul class="left">
-<li><a href="#">e2-1</a></li>
-<li><a href="#">e2-1</a></li>
-</ul>
-</li>
-<li><a href="#">e1</a>
-<ul class="left">
-<li><a href="#">e2-2</a></li>
-<li><a href="#">e2-2</a></li>
-</ul>
-</li>
-</ul>
-</li>
+
 <!--nav-->
-    
-    
-    </ul>
-   
+    <div class="box1">
+<a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
+"><div class ="yt1">YouTube</div></a>  </div>       
+
+        
+              
+          </div>
+
+    </ul>   
 
 <!--nav-->
     

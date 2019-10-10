@@ -41,7 +41,7 @@ body{
     
     
 .container{
-    max-width: 1000px;
+    max-width: 980px;
     padding:0px 20px;
     margin:auto;
 }
@@ -255,10 +255,10 @@ body{
 
 
 p{
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: justify;
-    color:black;
-    margin: 0.4em 0.2em 0.4em 0.2em;
+    color:darkslategray;
+    margin: 2em 2em 2em 2em;
 }
 
 h2{
