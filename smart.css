@@ -19,17 +19,19 @@ body{
 }
     
 .main{
-    padding:20px 0px 0px 0px;
+    padding:20px 0px 20px 0px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    background:linear-gradient(white,lavender);
 }
 .main2{
     background-color: lavenderblush;
-    padding:20px 0px 0px 0px;
+    padding:20px 0px 20px 0px;
     border:red 0px solid;
     margin: auto;
+    background:linear-gradient(lavender,white);
 }
 .main3{
     background-color: lavender;
@@ -81,7 +83,7 @@ body{
 .img100 >p{
     margin-top:0px;
     margin-bottom: 5px;
-    font-size:18px;
+    font-size:14px;
 }
 .img100 >h4{
     text-align: center;
@@ -96,7 +98,7 @@ body{
 .imag70 >p{
     margin-top:0px;
     margin-bottom: 5px;
-    font-size:18px;
+    font-size:14px;
 }
 
 /*========================  imgbox  

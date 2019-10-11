@@ -8,7 +8,9 @@
 @media screen and (min-width: 768px){
 
 .member1{
-    display: flex;}
+    display: flex;
+    
+    }
 .TMl{
     min-width:200px;
     min-height: 200px;
@@ -29,7 +31,11 @@
     background-size: contain;
     margin: 20px;
 }
-.TMr{}
+.TMr>p{
+    size:30px; 
+    
+    
+    }
                      
     
 }
