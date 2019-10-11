@@ -19,6 +19,7 @@ body{
 }
     
 .main{
+    background:linear-gradient(White,lavender);
     padding:0px 0px 50px 0px;
     margin-top: 80px;
     margin-bottom: auto;
@@ -26,7 +27,7 @@ body{
     margin-right: auto;
 }
 .main2{
-    background-color: lavenderblush;
+    background:linear-gradient(lavender, White);
     padding:30px 0px 80px 0px;
     border:red 0px solid;
     margin: auto;
@@ -331,7 +332,7 @@ h5{
   color: #fff;
   font-size: 20px;
   line-height: 50px;
-  background:linear-gradient(#2193b0 ,#6dd5ed);;
+  background:linear-gradient(#2193b0 ,#6dd5ed);
   transition: 0.5s;
   text-decoration: none;
   border: 1px solid #eee;
