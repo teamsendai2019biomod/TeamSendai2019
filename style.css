@@ -71,6 +71,36 @@ body{
 .table1>li{
 }
     
+    
+    
+    
+    .m-v{
+    float: right;
+}
+
+.top-title{
+    text-align: left;
+}
+
+.top-title>h1{
+    -webkit-text-stroke: 3px #121633;
+    text-stroke: 2px #121633;
+    color:aliceblue;
+    font-size: 4.5em;
+    padding: 10px;
+    margin: 190px 150px 50px 80px;
+    float:left;
+    border: 10px solid aliceblue;
+    border-radius: 10px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
 .movie-wrap {
      position: relative;
      padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
