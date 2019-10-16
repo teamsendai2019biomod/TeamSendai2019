@@ -120,11 +120,14 @@ body{
     max-width: 100%;
     height: 900px;
     padding-top: 0px;
-    background-image: url("images1/mainwikide1.png");
+    background-image: url("images1/wiki_main20.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color:ghostwhite;
+    display: block;
     text-align: right;
+    top: 0;
 }
     
     
