@@ -21,11 +21,15 @@
 .iconbox3{
     width: 290px;
     height: 190px;
-    border: solid 10px ;
+    border: solid 10px darkgrey;
     border-radius: 30px;
     margin: 5px;
     padding: 0;
+    background-color: lightgrey;
 }
+
+
+    
 .iconbox3b{
     width: 290px;
     height: 190px;
@@ -38,11 +42,11 @@
 .iconbox4{
     width: 290px;
     height: 80px;
-    border: solid 10px blue;
+    border: solid 10px steelblue;
     border-radius: 30px;
     margin: 5px;
     padding: 0;
-    background-color: lightskyblue;
+    background-color: skyblue;
 }
 
     .iconbox4 > p{
@@ -123,8 +127,15 @@
         padding: auto;
     }
     
-     
-    
-    
 
 }
+
+
+
+.iconbox3:hover{
+    background-color: aquamarine;
+    }
+
+.iconbox4:hover{
+    background-color: deepskyblue;
+    }
