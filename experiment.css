@@ -69,6 +69,58 @@
 
 
 @media screen and (max-width:767px){
+.iconbox{
+    width: 300px;
+    height: 215px;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+.iconbox a{
+    text-decoration:none;
+    }
+    .iconbox p{size: 120%;}
+.iconbox2{
+    width: 295px;
+    height: 100px;
+    display: flex;
+    margin:auto;
+    padding: 5px;
+}
+.iconbox3{
+    width: 145px;
+    height: 95px;
+    border: solid 5px darkgrey;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 0;
+    background-color: lightgray;
+}
+.iconbox3b{
+    width: 145px;
+    height: 95px;
+    display:inline-block;
+    margin: 5px;
+    padding: 0;
+
+}
+.iconbox4{
+    width: 145px;
+    height: 40px;
+    border: solid 5px  steelblue;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 0;
+    background-color: skyblue;
+}
+
+    .iconbox4 > p{
+        font-size: 70%;
+        margin-left: 10px;
+        margin-top: 13px;
+        margin-right: auto;
+        padding: auto;
+    }
     
      
     
