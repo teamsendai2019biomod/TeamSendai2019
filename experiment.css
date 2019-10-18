@@ -21,7 +21,7 @@
 .iconbox3{
     width: 290px;
     height: 190px;
-    border: solid 10px lavender;
+    border: solid 10px ;
     border-radius: 30px;
     margin: 5px;
     padding: 0;
@@ -38,10 +38,11 @@
 .iconbox4{
     width: 290px;
     height: 80px;
-    border: solid 10px lavender;
+    border: solid 10px blue;
     border-radius: 30px;
     margin: 5px;
     padding: 0;
+    background-color: lightskyblue;
 }
 
     .iconbox4 > p{
