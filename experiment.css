@@ -1,0 +1,77 @@
+@media screen and (min-width: 768px){
+
+.iconbox{
+    width: 600px;
+    height: 430px;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+.iconbox a{
+    text-decoration:none;
+    }
+    .iconbox p{size: 120%;}
+.iconbox2{
+    width: 590px;
+    height: 200px;
+    display: flex;
+    margin:auto;
+    padding: 10px;
+}
+.iconbox3{
+    width: 290px;
+    height: 190px;
+    border: solid 10px lavender;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 0;
+}
+.iconbox3b{
+    width: 290px;
+    height: 190px;
+    border-radius: 15px;
+    display:inline-block;
+    margin: 5px;
+    padding: 0;
+
+}
+.iconbox4{
+    width: 290px;
+    height: 80px;
+    border: solid 10px lavender;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 0;
+}
+
+    .iconbox4 > p{
+        margin-left: 30px;
+        margin-top: 27px;
+        margin-right: auto;
+        padding: auto;
+    }
+    
+    
+.TMl{
+    min-width:200px;
+    min-height: 200px;
+    max-width: 210px;
+    max-height: 210px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+    
+}
+                     
+    
+}
+
+
+@media screen and (max-width:767px){
+    
+     
+    
+    
+
+}
