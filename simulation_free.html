@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jack and DNA stalk |BIOMOD2019</title>
+    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
+        
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+        <link rel="stylesheet" media="all" type="text/css" href="style.css" />
+        <!-- ※デフォルトのスタイル（style.css） -->
+        <link rel="stylesheet" media="all" type="text/css" href="tablet.css" />
+        <!-- ※タブレット用のスタイル（tablet.css） -->
+        <link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+        <!-- ※スマートフォン用のスタイル（smart.css） -->
+        <link rel="stylesheet" media="all" type="text/css" href="simulation.css" />
+        
+        <link rel="stylesheet" href="team.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="reponsive.css">
+        <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+        <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+        
+        
+    </head> 
+     
+ <script> 
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+<script>    
+    $(function() {
+  $('.toggle').click(function() {
+    $(this).toggleClass("active");
+		if($(this).hasClass('active')) {
+			$('.global_nav').addClass('active');
+		} else {
+			$('.global_nav').removeClass('active');
+		}
+  });
+});
+    </script>    
+    
+    
+<!--============閉会ボタン===========================-->
+<script>
+   $(function(){
+   $("ul.children").after("<span class='accordionBtn'></span>");
+   $("ul.children").hide();
+   $("ul .accordionBtn").on("click", function() {
+     $(this).prev("ul").slideToggle();
+     $(this).toggleClass("active");
+   });
+});    
+    </script>
+    
+    
+<!--==================================================-->
+  <script>
+      var startPos = 0,winScrollTop = 0;
+    $(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header').addClass('hide');
+        $('.global_nav').addClass('hide');
+    } else {
+        $('.header').removeClass('hide');
+        $('.global_nav').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+    </script>
+    
+    
+    <script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+    
+   
+    
+<body>
+<!-- =======================header====================================================== -->    
+          
+    <div class="header">
+
+            
+        <div class="header-left">
+            <div class="head1"></div>
+            <div class="head2"><a><a>TeamSendai<br>Jack and DNA stalk</a></a></div>
+            <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
+            <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3">
+            <div class="head4"></div></a> 
+        </div>
+        </div>
+                  
+        <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>        
+        
+                                 
+        <div class="global_nav" body ontouchstart=""> 
+           <!-- <div class="glnavleft">
+            <li class="nav_li"><a href="#menu1">メニュー1</a></li>
+            <li class="nav_li"><a href="#menu2">メニュー2</a></li>
+            <li class="nav_li"><a href="#menu3">メニュー3</a></li>
+            </div>     -->
+           
+                
+            <ul class="nav"> 
+                <li><a href="index.html">Home</a>
+                    <ul>
+                        <li><a href="index.html#a1">Abstruct</a></li>
+                        <li><a href="index.html#a2">Youtube</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="background.html">Background</a>
+                    <ul>
+                        <li><a href="background.html#b1">Motivation</a></li>
+                        <li><a href="background.html#b2">Merit</a></li>
+                        <li><a href="background.html#b3">Problem&amp;Solution</a></li>
+                    </ul>
+                </li>
+                <li><a href="design.html">Design</a>
+                    <ul>
+                        <li><a href="design.html#c1">HCR</a></li>
+                        <li><a href="design.html#c2">RHCR</a>
+                            
+                        </li>
+                    </ul>
+                </li>
+        
+                <li><a href="simulation.html">Simulation</a>
+                    <ul>
+                        <li><a href="simulation.html#d1">Free energy estimation</a></li>
+                        <li><a href="simulation.html#d2">Reaction rate simulation</a></li>
+                    </ul>
+                </li>
+                <li><a href="experiment.html">Experiment</a>
+                    <ul>
+                        <li><a href="experiment.html#e1">HCR</a></li>
+                        <li><a href="experiment.html#e2">RHCR</a></li>
+                    </ul>
+                </li>
+                <li><a href="future.html">Future</a></li>        
+                <li><a href="team.html">Team/ELSI</a>
+                    <ul>
+                        <li><a href="team.html#g1">Member</a></li>
+                        <li><a href="team.html#g2">Menter</a></li>
+                        <li><a href="team.html#g3">Supecial Thanks</a></li>
+                        <li><a href="elsi.html">ELSI</a></li>
+                    </ul>
+                </li>
+        
+        <!--nav-->
+                <div class="box1">
+                    <a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
+                    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3"><div class ="yt1">YouTube</div></a>
+                </div>       
+            </ul>
+        </div>
+        
+        
+        <!--nav-->
+            
+        </div>  
+    
+        <br><br><br>
+        
+        <div class="main">
+             <div class="container">
+                <div class=topic><h2>Purpose</h2></div>
+                <p>
+                     Calculate <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math> for each reaction and quantitatively estimate the feasibility of the RHCR. In addition, based on the calculated free energies, simulate the difference in reaction rate with and without Nicking Endonuclease in the shrinking reaction to confirm the validity of our shrinking method.
+                    The state before four-way branch migration is named <math mathsize="8pt"><mi>P</mi></math> and the state after four-way branch migration is named Q. 
+                    The subscript represents the number of hairpins included in main strand. 
+                    In the shrinking reaction, the “polymerization actuator” is nicked (see idea).
+                    The nicked <math mathsize="8pt"><mi>P</mi></math> and <math mathsize="8pt"><mi>Q</mi></math> state are called <math mathsize="8pt"><msup><mi>P</mi><mn>'</mn></msup></math> and <math mathsize="8pt"><msup><mi>Q</mi><mn>'</mn></msup></math> state respectively.
+                    As depicted in figure 1, as same to the extending reaction, the initial state of shrinking reaction has two patterns, H1 end, and H2 end. And the shrinking reaction occurs by repeating those two-state.
+                </p>
+                <p>
+                    Therefore, by calculating
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>2</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mi>,</mi>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>2</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mi>,</mi>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>3</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mi>,</mi>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>3</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                    </math>
+                     
+                    we can generalize to
+                    
+                    <math  mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>2i</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>2i</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mi>,</mi>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>2i</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>2i</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mi>,</mi>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>2i+1</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>2i+1</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mi>,</mi>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>2i+1</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>2i+1</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                    </math>
+                    ( i is an integer)
+                </p>
+                
+                <!-- 画像Figure1a前 -->
+                
+                <div class="img70">
+                     <img src="sim_imgs/Sim_Fre_Figure1a.png" width="100%" border="0" alt="">
+                     <img src="sim_imgs/Sim_Fre_Figure1b.png" width="100%" border="0" alt="">
+                    <p>fig.1 The two patterns of the shrinking reaction</p>
+                    <h6>
+                        i is integer. a) 2i represents even number,  thus  <math mathsize="8pt"><msub><mi>Q</mi><mn>2i</mn></msub></math>
+                        means the H2 end “polymerization actuator”. b) 2i+1 or 2i-1 represents an odd number, thus <math mathsize="8pt"><msub><mi>Q</mi><mn>2i+1</mn></msub></math>or <math mathsize="8pt"><msub><mi>Q</mi><mn>2i-1</mn></msub></math> means the H1 end “polymerization actuator”.
+                    </h6>
+                </div>
+                <div class=topic><h2>Method</h2></div>
+                <p>
+                    The free energy was calculated using the structure prediction software called NUPACK. 
+                    Here, We assume that temperature is 37 degrees, 1M NaCl. 
+                     However, since NUPACK returns only the most stable structure, we cannot compare the energy of the Q and P states which comprise of the same DNA species by using NPACK.
+                    Therefore, we complementary calculated the free energy in the manual using the nearest neighbor model and simultaneous equations of enthalpy and entropy( Because <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math>  can be expressed as <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi><mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mi>T</mi><mo>&Delta;</mo><mi>S</mi></math> (&Delta;H: entropy. &Delta;S: enthalpy ) and  &Delta;H,&Delta;S is temperature dependant, we can estimate the free energy at 37 degrees by solving the simultaneous equations. Only if we can obtain the desired structure in NUPACK at a certain temperature.)
+                </p>
+                <div class=topic><h2>Result</h2></div>
+               
+                <h4>The calculation of
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>2</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                    </math>
+                </h4>
+                <p>We can obtain the free energy of <math mathsize="8pt"><msub><mi>Q</mi><mn>2</mn></msub></math> at 37 degrees, but the free energy of <math mathsize="8pt"><msub><mi>P</mi><mn>2</mn></msub></math> could not be obtained at any temperature in NUPACK (Because of software’s properties). Thus, we calculate manually using the below model.</p>
+                <div class="img70">
+                    <img src="sim_imgs/Sim_Fre_Figure2.png" width="100%" border="0" alt="">
+                    <p>fig.2 The different structure part between <math mathsize="8pt"><msub><mi>Q</mi><mn>2i</mn></msub></math> and <math mathsize="8pt"><msub><mi>P</mi><mn>2i</mn></msub></math></p>
+                    <h6>The domain surrounded by circle in Q state newly makes duplex in P state.</h6>
+                </div>
+                
+                <p>
+                    As shown in figure2, when the Q state shift to the P state, newly the purple domain forms duplex, and the red domain forms the hairpin loop.
+                    The Gibbs energy change can be obtained by subtracting the dangling end energy and adding the hairpin loop energy, duplex energy. &Delta;G of this reaction can be expressed by the following equation.
+                </p>
+                
+        
+                <div class ="scroll" align="center">
+                     <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>2</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>-</mo>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>P</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mfenced>
+                            <mtable>
+                              <mtr>
+                                <munderover>
+                                    <mi>A</mi>
+                                    <mi mathsize="11pt">T</mi>
+                                </munderover>
+                                <munderover>
+                                    <mi>G</mi>
+                                    <mi mathsize="11pt">C</mi>
+                                </munderover>
+                                <mo>+</mo>
+                                <munderover>
+                                    <mi>G</mi>
+                                    <mi mathsize="11pt">C</mi>
+                                </munderover>
+                                <munderover>
+                                    <mi>C</mi>
+                                    <mi mathsize="11pt">G</mi>
+                                </munderover>
+                                <mo>+</mo>
+                                <munderover>
+                                    <mi>C</mi>
+                                    <mi mathsize="11pt">C</mi>
+                                </munderover>
+                                <munderover>
+                                    <mi>G</mi>
+                                    <mi mathsize="11pt">G</mi>
+                                </munderover>
+                              </mtr>
+                            </mtable>
+                      </mfenced>
+                      <mo>+</mo>
+                      <mi>HairpinLoop(n)</mi>
+                      <mo>-</mo>
+                      <mi>(CA/G)</mi>
+                      <mo>-</mo>
+                      <mi>(TG/C)</mi>
+                    </math>
+                    <br><br>
+                    <math mathsize="8pt">
+                        <mo>=-1.28-2.24-1.84+4.6+0.82 + 0.61</mo>
+                        <mo>=0.67 (kcal/mol)</mo>
+                    </math>
+                </div>
+        
+                
+                
+                <p>Here, all parameters are quoted from Santalucia et al.,(2004) which is almost the same parameters as that of NUPACK.</p>
+                <h4>The calculation of
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>2</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                    </math>
+                </h4>
+                <p>
+                    We can obtain the free energy of <math mathsize="8pt"><msub><mi>Q'</mi><mn>2</mn></msub></math> at 37 degrees, <math mathsize="8pt"><msub><mi>Q'</mi><mi>2</mi></msub></math>= -116.98 and the free energy of <math mathsize="8pt"><msub><mi>P'</mi><mi>2</mi></msub></math> 
+                    could be obtained at 38 degrees and 39 degrees. The results are  -123.49(kcal/mol),  -121.86(kcal/mol), respectively. We can obtain the free energy at 37 degrees by solving the simultaneous equations shown below.
+                </p>
+                <section class="stimulus" align="center">
+                    <math>
+                      <mo>{</mo>
+                      <mtable>
+                        <mtr>
+                          <mtd>
+                            <mo>-</mo><mi>123.49</mi><mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mn>311</mn><mo>&Delta;</mo><mi>S</mi>
+                          </mtd>
+                        </mtr>
+                        <mtr>
+                          <mtd>
+                            <mo>-</mo><mi>121.86</mi><mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mn>312</mn><mo>&Delta;</mo><mi>S</mi>
+                          </mtd>
+                        </mtr>
+                      </mtable>
+                    </math>
+                </section>
+                <p>Therefore, at 37 degrees,</p>
+                <section class="scroll" id="equision">
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo><msub><mi>G</mi><mn><msub><mi>P'</mi><mn>2</mn></msub></mn></msub>
+                        <mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mn>310</mn><mo>&Delta;</mo><mi>S</mi><mo>=</mo><mn>-116.97(kcal/mol)</mn>
+                    </math>
+                    <br>
+                    
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>2</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>2</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>&Delta;</mo><msub><mi>G</mi><mn><msub><mi>P'</mi><mn>2</mn></msub></mn></msub>
+                        <mo>-</mo>
+                        <mo>&Delta;</mo><msub><mi>G</mi><mn><msub><mi>Q'</mi><mn>2</mn></msub></mn></msub>
+                        <mo>=</mo><mi>-116.97-(-116.98)</mi><mo>=+0.01(kcal/mol) </mo>
+                    </math>
+                </section>
+                 <h4>The calculation of
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>3</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                    </math>
+                </h4>
+                  <p>We can obtain the free energy of <math mathsize="8pt"><msub><mi>Q</mi><mn>3</mn></msub></math> at 37 degrees, but the free energy of <math mathsize="8pt"><msub><mi>P</mi><mn>3</mn></msub></math> could not be obtained at any temperature in NUPACK (Because of software’s properties). Thus, we calculate manually using the below model.</p>
+                <div class="img70">
+                    <img src="sim_imgs/Sim_Fre_Figure3.png" width="100%" border="0" alt="">
+                    <p>fig.3 The different structure part between <math mathsize="8pt"><msub><mi>Q</mi><mn>2i+1</mn></msub></math> and <math mathsize="8pt"><msub><mi>P</mi><mn>2i+1</mn></msub></math></p>
+                    <h6>The domain surrounded by circle in Q state newly makes duplex in P state.</h6>
+                </div>
+                
+                <p>
+                    As shown in fig3, when the Q state shift to the P state, newly the light blue domain forms duplex, and the green domain forms the hairpin loop.
+                    The Gibbs energy change can be obtained by subtracting the dangling end energy and adding the hairpin loop energy, duplex energy. <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math> of this reaction can be expressed by the following equation.
+                </p>
+                
+                <div class ="scroll" align="center">
+                     <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>3</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>-</mo>
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>P</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mfenced>
+                            <mtable>
+                              <mtr>
+                                <munderover>
+                                    <mi>C</mi>
+                                    <mi mathsize="11pt">C</mi>
+                                </munderover>
+                                <munderover>
+                                    <mi>G</mi>
+                                    <mi mathsize="11pt">G</mi>
+                                </munderover>
+                                <mo>+</mo>
+                                <munderover>
+                                    <mi>C</mi>
+                                    <mi mathsize="11pt">T</mi>
+                                </munderover>
+                                <munderover>
+                                    <mi>G</mi>
+                                    <mi mathsize="11pt">A</mi>
+                                </munderover>
+                                <mo>+</mo>
+                                <munderover>
+                                    <mi>T</mi>
+                                    <mi mathsize="11pt">G</mi>
+                                </munderover>
+                                <munderover>
+                                    <mi>A</mi>
+                                    <mi mathsize="11pt">C</mi>
+                                </munderover>
+                              </mtr>
+                            </mtable>
+                      </mfenced>
+                      <mo>+</mo>
+                      <mi>HairpinLoop(n)</mi>
+                      <mo>-</mo>
+                      <mi>(GC/G)</mi>
+                      <mo>-</mo>
+                      <mi>(GC/C)</mi>
+                    </math>
+                    <br><br>
+                    <math mathsize="8pt">
+                        <mo>= -1.84 -1.28 - 1.45 + 4.6 + 0.23 + 0.72</mo>
+                        <mo>=0.98 (kcal/mol)</mo>
+                    </math>
+                </div>
+                    
+            
+                 <h4>The calculation of
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>3</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                    </math>
+                </h4>
+                <p>
+                    We can obtain the free energy of <math mathsize="8pt"><msub><mi>P'</mi><mn>3</mn></msub></math> at 37 degrees, <math mathsize="8pt"><msub><mi>P'</mi><mi>3</mi></msub></math>= -161.87 and the free energy of <math mathsize="8pt"> <msub><mi>Q'</mi><mi>3</mi></msub> </math> 
+                    could be obtained at 60 degrees and 61 degrees. The results are -112.28(kcal/mol), -110.24(kcal/mol), respectively. We can obtain the free energy at 37 degrees by solving the simultaneous equations shown below.
+                </p>
+                
+                <section class="stimulus" align="center">
+                    <math>
+                      <mo>{</mo>
+                      <mtable>
+                        <mtr>
+                          <mtd>
+                            <mo>-</mo><mi>112.28</mi><mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mn>333</mn><mo>&Delta;</mo><mi>S</mi>
+                          </mtd>
+                        </mtr>
+                        <mtr>
+                          <mtd>
+                            <mo>-</mo><mi>110.24</mi><mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mn>334</mn><mo>&Delta;</mo><mi>S</mi>
+                          </mtd>
+                        </mtr>
+                      </mtable>
+                    </math>
+                </section>
+                <p>Therefore, at 37 degrees,</p>
+                <section class="scroll"  id="equision">
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo><msub><mi>G</mi><mn><msub><mi>Q'</mi><mn>3</mn></msub></mn></msub>
+                        <mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mn>310</mn><mo>&Delta;</mo><mi>S</mi><mo>=</mo><mn>-159.20(kcal/mol)</mn>
+                    </math>
+                    <br>
+                    <math mathsize="8pt">
+                        <mo>&Delta;</mo>
+                        <msub>
+                            <mi>G</mi>
+                            <mn>
+                                <msub>
+                                    <mi>Q'</mi><mn>3</mn>
+                                </msub>
+                                <mi>→</mi>
+                                <msub>
+                                    <mi>P'</mi><mn>3</mn>
+                                </msub>
+                            </mn>
+                        </msub>
+                        <mo>=</mo>
+                        <mo>&Delta;</mo><msub><mi>G</mi><mn><msub><mi>P'</mi><mn>3</mn></msub></mn></msub>
+                        <mo>-</mo>
+                        <mo>&Delta;</mo><msub><mi>G</mi><mn><msub><mi>Q'</mi><mn>3</mn></msub></mn></msub>
+                        <mo>=</mo><mi>-161.87-(-159.20)</mi><mo>=-2.67</mo>
+                    </math>
+                </section>
+                <p>Summarize the obtained free energy into the below diagram.
+                    All ΔG was calculated under the condition that 37℃ and 1M NaCl.
+                </p>
+                <div class="img100">
+                    <img src="sim_imgs/Sim_Fre_Figure4.png" width="100%" border="0" alt="">
+                    <p>fig.4 State Transition Diagram of the shrinking reaction (<msub><mi>Q'</mi><mn>2i</mn></msub></math>→<msub><mi>P'</mi><mn>2i</mn></msub></math>)( H2 end version)</p>
+                </div>
+                <div class="img100">
+                    <img src="sim_imgs/Sim_Fre_Figure4.png" width="100%" border="0" alt="">
+                    <p>fig.4 State Transition Diagram of the shrinking reaction (<msub><mi>Q'</mi><mn>2i+1</mn></msub></math>→<msub><mi>P'</mi><mn>2i+1</mn></msub></math>)( H1 end version)</p>
+                </div>
+                <p>
+                    The reaction from Q to Q’ is too high to occur autonomously, but this process is driven by enzyme, which is Nicking Endonuclease.
+                    In the shrinking reaction, while the desired structure is P’, the H2 end version favors Q’ than P’(fig.4). However, because ΔG is enough low to occur reversible reaction between Q’ and P’, there is no problem in the shrinking reaction.
+                    We have succeeded in the theoretical explanation that DNA complex shifts to P state by nicking endonuclease.
+                </p>
+                
+            </div>
+        </div>
+      
+      
+      
+      
+      
+      
+      
+        <div class="footer">
+            <p class="pagetop"><a href="#wrap">▲<br>Top</a></p>
+            <div class="footer-left">
+                <a href="https://www.tohoku.ac.jp/en/"><div class="tohokuicon"></div></a>
+                <a href="http://www.molbot.mech.tohoku.ac.jp/eng/index.html"><div class="labicon"></div></a>
+                <a href=""><div class=""></div></a>
+            <div class="box2">
+                <a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
+                <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3"><div class ="yt1">YouTube</div></a></div>     
+            </div>
+            <div class="footer-right">
+                &copy;Team Sendai 2019
+            </div>
+            <div class="clear"></div>
+        </div>      
+             
+
+    </body>
+</html>
