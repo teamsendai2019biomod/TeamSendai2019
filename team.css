@@ -1,7 +1,7 @@
 .topic{}
 
 .member1{
-    display: flex;
+    padding-left: 30px;
 }
 
 
@@ -31,7 +31,12 @@
     background-size: contain;
     margin: 20px;
 }
-.TMr>p{
+    
+.TMr h5{
+        font-size: 33px;
+}
+    
+.TMr p{
     size:30px; 
     
     
@@ -67,7 +72,9 @@
 }
 .TMr{}
             
-    
+ .TMr>h5{
+        font-size: 22px;
+}   
     
 
 }
