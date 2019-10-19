@@ -76,7 +76,7 @@ body{
 /*========================= imgbox ===============================*/
 .img100{
     max-width: 1200px;
-    padding:0;
+    padding:2%;
     margin: 2.5%;
     text-align: justify;
 }

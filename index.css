@@ -19,9 +19,12 @@
      height: 100%;
 }
 
-
-
-
+.main2{
+    background-image: url(images1/DNA_tree_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
 
 
