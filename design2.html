@@ -214,40 +214,60 @@ $(document).ready(function() {
  <a id="c2"></a>
     <div class="main2">
          <div class="container">
+             <br><br><br>
              <div class=topic><h2>Sequence Design</h2></div>
-             <h3>Extending Mechanism</h3>
-             <p>
+            
+             <p>Based on the design by Venkataraman et al (2007), we designed the sequence for RHCR. In order to promote the extending reaction, we have destabilized hairpin by changing "a" and "c" domains from 6 bases to 10 bases and made it more GC rich. The restriction site of nicking endonuclease Nt.BbvCI was placed inbetween the hairpin stem and the x or y domains (fig.7 &10). In addition, for the shrink reaction, toehold was added next to the a or c domains in order to release the hairpin in state P.
+
+</p>
+             <p>The obtained sequences are shown below<br><br>
+RH1: CCTTCAGTGAGGCGTCGAGAGGCACCGTGGCTGAGGAGCCACACCACCTCAGCCACGGTGCCTCAGCC<br>
+RH2: CAGGCCTCAGCCACGGTGCCTCTCGACGCCTCGAGGCACCGTGGCTGAGGTGGTGTGGCTTAGCGTGT<br> 
+R: GGCTGAGGCACCGTGGCTGAGGCCTG<br>
+A: CCTCAGCCACGGTGCCTCTCGACGCCTC<br>
+H1rel: TCGACGCCTCACTGAAGG<br>
+H2rel: ACACGCTAAGCCACACCA<br><br>
+
+To confirm the formation of desired structures, we performed simulation by the structure prediction software NUPACK. Sequence of H1 and H2 form hairpins properly as shown in fig1 and 2. sequence A and R, which serve as crosslinking points, also have the desired structure as shown in fig3.
 </p>
              
  
              <div class="img100">
                     <img src="image2/H1_sequence.png"  width="100%" border="0" alt="">
-                 <p>fig.</p>
-                    <h6></h6>
+                 <p>fig.1 H1 hairpin formation</p>
+                    <h6>From the left, NUPACK result, target structure, a sequence of each domain.</h6>
              </div> 
+             <p></p>
+             
              
               <div class="img100">
                     <img src="image2/H2_sequence.png"  width="100%" border="0" alt="">
-                 <p>fig.</p>
+                 <p>fig.2 H2 hairpin formation</p>
                     <h6></h6>
              </div> 
              
               <div class="img100">
                     <img src="image2/AR_sequence.png"  width="100%" border="0" alt="">
-                 <p>fig.</p>
+                 <p>fig.3 A-R complex formation</p>
                     <h6></h6>
-             </div> 
+             </div>
              
+             <p>The hairpin monomer and A-R complex successfully form the target structure. Next, we confirm reactions in HCR.</p>
              
-             
+    </div></div>
+          
+    <div class="main2">
+        <div class="container">
+            <h2>Extending reaction</h2>
              
              <div class="img100">
                  <div class="img100de">
                     <img src="image_design/image_s/design_sequence_state4.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/design_state4_reaction.png"  width="100%" border="0" alt="">
                  </div>
-                 <p>fig.</p>
-                    <h6></h6>
+                 <p>fig.4 State4:H1-A-R</p>
+                    <h6>The name of input DNA, the maximum number of complexes allowed in the NUPACK simulation, and reaction temperature are shown in the box. The yield of the result is shown in the lower left, and the major product structure is shown in the right.
+</h6>
              </div>   
              
              <div class="img100">
@@ -255,7 +275,7 @@ $(document).ready(function() {
                     <img src="image_design/image_s/design_sequence_state8.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/design_state8_reaction.png"  width="100%" border="0" alt="">
                  </div>
-                 <p>fig.</p>
+                 <p>fig.State 5:H1-R-H2-A</p>
                     <h6></h6>
              </div>   
              
@@ -264,38 +284,62 @@ $(document).ready(function() {
                     <img src="image_design/image_s/design_sequence_state12.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/design_state12_reaction.png"  width="100%" border="0" alt="">
                  </div>
-                 <p>fig.</p>
+                 <p>fig.6 State12:H1-H1-R-H2-A</p>
                     <h6></h6>
-             </div>   
-             
+             </div>  
+            <p>Overall, in the extending reaction, all the target structures were obtained as desired . </p>
+        </div></div>         
+            
+       <div class="main">
+        <div class="container">
+            <h2>Shrinking reaction</h2>
+            <h3>H1 end nicking</h3>
+            <p>Fig.7 shows the end part of the double-strand formed by the H1 and R.</p>
              <div class="img100">
                     <img src="image_design/image_s/H1end_nicksase_sequence.png"  width="100%" border="0" alt="">
-                 <p>fig.</p>
+                 <p>fig.7 Nickase restriction site at H1end</p>
                     <h6></h6>
              </div> 
              
+            <p>Scissors represent the nickase (Nt.BbvCl). The brown line along the sequence represents the b domain of the hairpin stem and the purple line represents the x domain. The restriction sequence is shown in the right box. The restriction site emerges inbetween the x domain and the 2b end part of the b domain. DNA is nicked at the position shown by a dotted line. The recognition sequence of Nicking endonuclease Nt.BbvCI is appeared by the binding of H1 and R, then nicking takes place on the 6 base from 3 'side of H1. Linqiang Pan et al (2017) implies that 6 bases are short enough to remove it from the main strand by denaturation.  Nicked state Q3 is more likely to form hairpin than state Q3 before the nicking and therefore the reaction finally settles in the P state.<br><br>
+            We call the form of H1 after processed by the nickase as “H1n”. The composition of P'3 obtained by nicking Q3 (H1end HCR product) is represented as H1n-H1-R-H2-A. However this structure cannot be evaluated by NUPACK because it is not the most stable product. So as an alternative, H1n, H2, A, R are input to the simulator. The difference from the actual P’3 structure is no effect on the stability of the hairpin structure at the tip.Also, we input H1n instead of H1. The result is shown in fig.8
+
+            </p>
+            
+            
               <div class="img100">
                  <div class="img100de">
                     <img src="image_design/image_s/shrink1_sequence.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/shrink1_reaction.png"  width="100%" border="0" alt="">
                  </div>
-                 <p>fig.</p>
+                 <p>fig.8 State:H1n-H1n-R-H2-A</p>
                     <h6></h6>
              </div>  
+            
+            <p>As shown in Fig. 8, the structure of P'3 was obtained as we intended.<br><br>In order to remove H1 that forms the self-complementary structure, H1 releaser(H1rel) is added. NUPACK simulation was performed to verify this process.
+</p>
+            
              
               <div class="img100">
                  <div class="img100de">
                     <img src="image_design/image_s/shrink2_sequence.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/shrink2_reaction.png"  width="100%" border="0" alt="">
                  </div>
-                 <p>fig.</p>
+                 <p>fig.9 P’3 + releaser</p>
                     <h6></h6>
              </div>  
+            
+            <p>By putting DNA with the concentration sufficient to form Q3, the last hairpin DNA is disconnected as we intended and forms waste complex with the releaser.</p>
+            
+            <h3>H2 end nicking</h3>
+            
+            <p>As the next step, a nickase recognition sequence appears at the tip of Q4, and Nt.BbvCI makes a nicks at the position 6 bases from the 5 'side of H2. As described above, 6b moves away from the main complex.
+</p>
              
               <div class="img100">
                     <img src="image_design/image_s/H2end_nicking_sequence.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/"  width="100%" border="0" alt="">
-                 <p>fig.</p>
+                 <p>fig.10 Nickase restriction site in H2end polymer</p>
                     <h6></h6>
              </div>  
              
@@ -304,21 +348,26 @@ $(document).ready(function() {
                     <img src="image_design/image_s/shrink3_sequence.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/shrink3_reaction.png"  width="100%" border="0" alt="">
                  </div>
-                 <p>fig.</p>
+                 <p>fig.11 H1-R-H2n-A</p>
                     <h6></h6>
              </div>  
              
-             
+             <p>As shown in Fig. 11, the structure of P'2 was obtained as we intended.
+In this state of P′2, in order to remove H2 that forms the closed hairpin,  H2releaser(H2rel) is added in the simulation.
+</p>
              
              <div class="img100">
                  <div class="img100de">
-                    <img src="image_design/image_s/shrink4_sequene.png"  width="100%" border="0" alt="">
+                    <img src="image_design/image_s/shrink4_sequence.png"  width="100%" border="0" alt="">
                     <img src="image_design/image_s/shrink4_reaction.png"  width="100%" border="0" alt="">
                  </div>
                  <p>fig.</p>
                     <h6></h6>
              </div>   
              
+            <p>As we intended, by adding DNA with the concentration sufficient to form Q2, the last hairpin DNA is disconnected and forms waste complex with the releaser.Then the Q1 become more stable than Q2.<br><br>From the above simulation, We can say that our sequences perform  will both the extending reaction and the shrinking reaction. Experiments and  farther simulations in the next sections are performed using the same sequences obtained here.
+            </p>        
+            
         </div> 
 </div>
  

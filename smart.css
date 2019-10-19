@@ -99,8 +99,10 @@ body{
     margin-bottom: 5px;
     font-size:14px;
 }
-.img100 >h4{
-    text-align: center;
+.img100 >h6{
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .img70{
@@ -113,6 +115,12 @@ body{
     margin-top:0px;
     margin-bottom: 5px;
     font-size:14px;
+}
+
+.img70 >h6{
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 /*========================  imgbox  
