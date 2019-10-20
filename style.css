@@ -167,13 +167,14 @@ body{
 .img70{
     max-width: 1200px;
     padding:0;
-    margin: 5% 15% 5% 15%;
+    margin: 5% 15% 0% 15%;
     text-align: justify;
 }
 .imag70 >p{
     margin-top:0px;
     margin-bottom: 5px;
-    font-size:18px;
+    padding-top: 0;
+    font-size:12px;
 }
 
 /*========================  imgbox  ===========================*/
