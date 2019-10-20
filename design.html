@@ -232,23 +232,17 @@ $(document).ready(function() {
          <div class="container">
             <br><br><br>
              <div class=topic><h2>Mechanism</h2></div>
-             <p>The mechanism that can be extended and contracted with both ends fixed to the structure is often used in nature. For example, muscles whose both ends are fixed to the tendon(fig. 1a), the network structure of Hydrodictyon which is a kind of algae(fig. 1b), and the contractile ring made of actin and myosin fixed to the cell membrane(fig. 1c). The advantage of these systems is that they can be resized while maintaining their structure. Currently, the size of DNA robots is determined permanently at the design phase, but by incorporating an actuator that maintains connectivity at both ends into a DNA robot, a more advanced DNA robot that can adjust the size by input will be realized.
+             <p>The HCR reported by Venkataraman et al (2007) realizes extending of linear DNA complex without losing connectivity between the both ends. When the ends are bound to an object, the size of the object can be extended. Angelo et al. (2017) applied this mechanism to the crosslinking of the polymergel and succeeded in creating a 100 times swelling gel.
+
 </p>
              
         <div class="img100">
              <img src="images1/Mechanism_fig1.png"  
                 width="100%" border="0" alt="">
             <p>fig.1 both ends fixed mechanisms are widely seen in nature</p>
-            <h6>setumei</h6>
         </div>
         
-         <div class="img100">
-             <img src="images1/"  
-                width="100%" border="0" alt="">
-            
-            <p>fig.</p>
-            <h6>setumei</h6>
-        </div>     
+       
              
              
         
@@ -257,49 +251,88 @@ $(document).ready(function() {
     <a id="c2"></a>
     <div class="main2">
          <div class="container">
-             <div class=topic><h2>HCR</h2></div>
-             <h3>Extending Mechanism</h3>
-             <p>
-</p>
-             
+             <div class=topic><h2>HCR
+</h2></div>
+             <h3>Extending Mechanism (Original HCR)</h3>
+     
+        
              <div class="img100">
             <img src="images1/Mechanism_fig2.png"  
                 width="100%" border="0" alt="">
-            <p>fig.1 both ends fixed mechanisms are widely seen in nature</p>
+            <p>fig.2 Mechanism of HCR maintaining the crosslinking point at both ends</p>
             <h6>setumei</h6>
              </div>
              
-             
+             <p>
+                  This type of HCR can maintain the crosslinking point on strand A or R in the extension, a hairpin H1 binds to a single-stranded toehold section of A and R, and then the four-way branch migration follows (state 2-3). As a result, R made new hybridization with H1 (state 4). Then a hairpin H2 binds to the newly exposed toehold end of H1, and a four-way branch migration occurs again (state 6-7). This replaces R from H1 to H2 (state 8). Then, H1 hybridizes to the newly exposed sticky ends again, which leads to a four-way branch migration (state 9-12).<br>
+As shown in the bottom of the left, the series of reactions can take place in a cyclic manner, which results in linear elongation of the complex.
+
+</p>
+             <h3>Shrinking Mechanism</h3>
+    
+             <p>Here, we have to consider a method of shrinking DNA strand while maintaining the crosslinking points.If we can ignore the connectivity between them, it is easy to depolymerize the structure. For instance, we can remove the hairpins by a strand displacement reaction. However, this doesn't work because not only hairpin DNA, but also the crosslinking DNA are removed. It is necessary to somehow shrink the DNA without releasing crosslinking point DNAs as shown in fig.3
+</p>
              
              <div class="img70">
                     <img src="images1/Mechanism_fig3.png"  
                          width="100%" border="0" alt="">
-                    <p>fig.</p>
-                    <h6>setumei</h6>
-             </div>   
+                    <p>fig.3 Continuous depolymerization maintaining the crosslinking DNAs
+</p>
+                    <h6></h6>
+             </div> 
+             
+             
+             <p>
+To achieve this, we focused on the four-way branch migration that appears in the HCR process. The fig.3 shows a comparison of the state before and after the four-way branch migration. Here, the state before the reaction is named P and the state after the reaction is named Q.<br>
+The subscript represents the number of hairpins included in the main strand. 
+Weak bindings are represented by a dashed line
+
+</p>
              
              <div class="img70">
                     <img src="images1/Mechanism_fig4.png"  
                     width="100%" border="0" alt="">
-                    <p>fig.</p>
-                    <h6>setumei</h6>
+                    <p>fig.4 Comparison of before(P state) and after(Q state) four-way branch migration.</p>
+                    <h6></h6>
             </div>   
+             
+             
+           <p>In the state Q, the crosslinking point DNA R binds to the last hairpin. In the state P, DNA R binds mainly to the second hairpin from the end, when the hairpin at the end forms a self-complementary structure. <br><br>
+
+Therefore, the last hairpin in state Q is easily removed by strand displacement in the state P, as a result, the complex shrinks while maintaining the crosslinking DNAs. <br><br>
+
+               To achieve this, the key is to shift the state from Q to P.</p>
+
+             
+             
              
              <div class="img100">
                     <img src="images1/Mecahnism_fig5a.png"  
                     width="100%" border="0" alt="">
             
                     <p>fig.</p>
-                    <h6>setumei</h6>
+                    <h6></h6>
              </div>   
-             
+             <p>Our proposal is called Reversible HCR (RHCR). Here, we explain the principle of our method. In the extending reaction, the reaction from P to Q must occur (fig.4). To check the feasibility of this reaction, the free energy of states P and Q were calculated using the Nearest-Neighbor model. We obtain <math>GP2Q2= -0.67</math> Kcal/mol, <math>GP3Q3 = -0.98</math> Kcal/mol (<a href="simulation.html
+                        ">see Simulation for the calculation method</a>), therefore, the extending reaction occurs spontaneously.<br><br>
+
+ Contrary, the reaction from Q to P does not occur. In order to solve this, we introduce an enzymatic reaction.<br>
+ In our design, the restriction site of Nicking endonuclease is always emerged in the tip of the complex (fig.5). Nicking endonuclease can recognize a specific double-strand region and leave one side of the duplex. In the RHCR, hairpin DNA is nicked. Hereafter, the nicked states P and Q are called states P’ and Q’ respectively.<br>
+The point is that state Q’  is relatively unstable and tends to transform to the P’ state.<br><br>
+
+                        Before nicking, <math>GQ3P3 = +0.98</math> Kcal/mol, and <math>GQ2P2=+0.67</math> Kcal/mol, after nicking,<math>GQ'3P'3= -2.67</math> Kcal/mol, and <math>GQ'2P'2=+0.01 </math>Kcal/mol. It shows that the nicking endonuclease actually drives the reaction from Q to P.<br><br>
+
+The hairpin DNA of RHCR is designed to have a toehold for releaser at the tip of the main complex and hairpin in the state P’ (The black or gray segments in fig.5). The hairpin DNA which forms the self-complementary (closed) structure in the state P’  can be released by a strand displacement by adding the releaser strand. By this reaction, the hairpin is released without disconnecting the crosslinking point. To see this, we calculated the free energy of nicked and un-nicked states.
+</p> 
         </div> 
 </div>
  
     <a id="c3"></a>
-             <div class="main2">
+             <div class="main">
                 <div class="container">
-                <div class=topic><h2>Reversible</h2></div>
+                       
+                    
+                <div class=topic><h2>Reversible HCR</h2></div>
                 <p> </p>
                     <div class="img100">
                         <img src="images1/Mecahnism_fig5a.png"  
@@ -307,21 +340,29 @@ $(document).ready(function() {
                            <img src="images1/Mechanism_fig5b.png"  
                         width="100%" border="0" alt="">
             
-                        <p>fig.</p>
-                        <h6>setumei</h6>
+                        <p>fig.5 The mechanism of shrinking maintaining the crosslinking point at both ends</p>
+                        <h6>In the RHCR, toehold domain and the restriction site of nicking endonuclease are added to the hairpins. Nicking endonuclease destabilizes the state Q which makes the nicked state P called state P’ more favorably. As a result, the last hairpin in the state Q forms the self-complementary structure (closed hairpin) and binds to the main strand by only one domain. In this form, that hairpin DNA is released by strand displacement without releasing crosslinking DNA.
+</h6>
                     </div>   
-                    
+                    <p>The critical point of this method is to destabilize the state Q’.  The destabilized hairpin DNA forms the self-complementary structure (closed hairpin) through four-way branch migration. As a result, the crosslinking point DNA R moves to the next hairpin form the end.<br><br>
+
+As shown in fig.6, the shrinking reaction is stopped at state Q1. Because there is no toehold anymore when the hairpin at the tip is nicked, it doesn't affect the extending reaction.<br>
+Therefore, by deactivating the nicking endonuclease, we can stop the shrinking. And if we add new hairpins to grow the complex, we can restart the extending reaction again.
+</p>
                     
                     
                     <div class="img100">
                         <img src="images1/Mechanism_fig6.png"  
                         width="100%" border="0" alt="">
             
-                        <p>fig.</p>
-                        <h6>setumei</h6>
+                        <p>fig.6 The end of the shrinking reaction and restart of the extending reaction
+</p>
+                        <h6></h6>
                     </div>   
                     
-                    
+                    <p>The shrinking reaction is stopped when it reaches state Q3. We can restart the extending reaction by adding H1, H2, and deactivation of nicking endonuclease.
+Scissors represents nicking endonuclease. The shrinking reaction is stopped at trimer.
+</p>
                     
                     
                     
