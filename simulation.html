@@ -715,7 +715,7 @@ $(document).ready(function() {
                     <p>fig.4 State Transition Diagram of the shrinking reaction (<msub><mi>Q'</mi><mn>2i</mn></msub></math>→<msub><mi>P'</mi><mn>2i</mn></msub></math>)( H2 end version)</p>
                 </div>
                 <div class="img100">
-                    <img src="sim_imgs/Sim_Fre_figure5.png" width="100%" border="0" alt="">
+                    <img src="sim_imgs/Sim_Fre_Figure5.png" width="100%" border="0" alt="">
                     <p>fig.5 State Transition Diagram of the shrinking reaction (<msub><mi>Q'</mi><mn>2i+1</mn></msub></math>→<msub><mi>P'</mi><mn>2i+1</mn></msub></math>)( H1 end version)</p>
                 </div>
                 <p>
@@ -723,6 +723,111 @@ $(document).ready(function() {
                     In the shrinking reaction, while the desired structure is P’, the H2 end version favors Q’ than P’(fig.4). However, because ΔG is enough low to occur reversible reaction between Q’ and P’, there is no problem in the shrinking reaction.
                     We have succeeded in the theoretical explanation that DNA complex shifts to P state by nicking endonuclease.
                 </p>
+                
+                 <h1>Simulation of concentration change</h1>
+                <p>We simulated RHCR extending/shrinking. The simulation model for extending is shown below.</p>
+                
+                <div class="img100">
+                     <img src="sim_imgs/Sim_Rea_1.png" width="100%" border="0" alt="">
+                    <p>fig.1 Schematic illustrations of the simulation model for RHCR extending</p>
+                </div>
+                
+                <p>The state with only A and R is defined as Q0, then H1 hairpin binds to the toehold sequence to make P1. Next, P1 changes to Q1 through the four-way branch migration. Then, H2 hairpin binds to the Q1 toehold sequence covered with purple to make Q2 by  branch migration.We regard these reactions as 1 cycle. DNA extending occurs repeating this cycle over and over again.
+                   The method of calculating the reaction rate in the simulation is described as follows. First, the reaction rate of hairpin binding is 
+                   <math mathsize="8pt"><msup><mn>10</mn><mn>6</mn></msup><msup><mi>(mol/L)</mi><mn>-1</mn></msup></math>
+                   in the 6 bases or more toehold sequence[DavidYu Zhang  et al. (2009)]. In our design, the toehold sequence of red and green color is 10 bases, the reaction rate is considered to be
+                   <math mathsize="8pt"><msup><mn>10</mn><mn>6</mn></msup><msup><mi>(mol/L)</mi><mn>-1</mn></msup></math>.
+                   However, the simulation result did not match with the experiment result when we applied the value, we assumed reaction rate to be 
+                   <math mathsize="8pt"><msub><mi>K</mi><mi>H1</mi></msub><mo>=</mo><msub><mi>K</mi><mi>H2</mi></msub><mo>=</mo><msup><mn>10</mn><mn>3</mn></msup></math>
+                   to fit with the experiment result.
+
+                </p>
+                <p>Differential equation for RHCR extending</p>
+                <div class="img100">
+                    <img src="sim_imgs/Equation1.png" width="100%" border="0" alt="">
+                </div>
+                <p>
+                    The reaction rate constant between 
+                    <math mathsize="8pt"><mi>P</mi><mi>→</mi><mi>Q</mi></math>
+                    and the The reaction rate constant between 
+                    <math mathsize="8pt"><mi>P</mi><mi>→</mi><mi>Q</mi></math>
+                    are defined as k+ and k-, and can be expressed as shown below based on the Arrhenius equation .
+                </p>
+                <p>
+                    The reaction between 
+                    <math mathsize="8pt"><msup><mi>Q</mi><mi>'</mi></msup><mn>3</mn><mi>→</mi><msup><mi>P</mi><mi>'</mi></msup><mn>3</mn></math>, the activation energy from 
+                    <math mathsize="8pt"><msup><mi>Q</mi><mi>'</mi></msup><mn>3</mn></math> 
+                    to 
+                    <math mathsize="8pt"><msup><mi>P</mi><mi>'</mi></msup><mn>3</mn></math>
+                    is defined as E−, while the activation energy from 
+                    <math mathsize="8pt"><msup><mi>P</mi><mi>'</mi></msup><mn>3</mn></math> 
+                    to 
+                    <math mathsize="8pt"><msup><mi>Q</mi><mi>'</mi></msup><mn>3</mn></math>
+                    is defined as E +. 
+                </p>
+                
+                 <div class="img100">
+                    <img src="sim_imgs/Equation25.png" width="100%" border="0" alt="">
+                </div>
+    
+                 <p>
+                    The reaction between 
+                    <math mathsize="8pt"><msup><mi>Q</mi><mi>'</mi></msup><mn>3</mn></math>&harr;<math mathsize="8pt"><msup><mi>P</mi><mi>'</mi></msup><mn>3</mn></math>
+                    can be expressed by differential equations as shown below. 
+                </p>
+                    
+                <div class="img100">
+                    <img src="sim_imgs/Equation3.png" width="100%" border="0" alt="">
+                </div>
+                <p>From the four equations above, the following equation was derived. </p>
+                <div class="img100">
+                    <img src="sim_imgs/Equation4.png" width="100%" border="0" alt="">
+                </div>
+                <p>
+                    The kinetic energy of the molecule is expressed as 
+                    <math mathsize="8pt"><msub><mi>K</mi><mi>b</mi></msub><msub><mi>N</mi><mi>a</mi></msub><mi>T</mi></math>
+                    The ratio between K-and K+ is determined by substituting
+                    <math mathsize="8pt"><mi>Δ</mi><mi>G</mi></math> and
+                    <math mathsize="8pt"><msub><mi>K</mi><mi>b</mi></msub><msub><mi>N</mi><mi>a</mi></msub><mi>T</mi></math>
+                    to the above equation. Generally,  the reaction rate constant of the branch migration is considered to be
+                    <math mathsize="8pt"><msup><mn>10</mn><mn>-1</mn></msup><msup><mn>[sec]</mn><mn>-1</mn></msup></math>[1]. 
+                    If this value is substituted to k+, the other reaction rate constant, k- can be obtained. Because the free energy change is different between H1 removal and H2 removal, we applied the average value of each free energy, derived to be -1.33kcal/mol. Based on this calculation,  the ratio of k- and k+ was calculated to be 8.7. Overall, by assuming k- to be
+                    <math mathsize="8pt"><msup><mn>10</mn><mn>-1</mn></msup></math>
+                    we found the value of k+ to be 1.2×10⁻²(sec)⁻¹ because k- is estimated to be bigger than k+.
+                    Based on the result, we simulated the RHCR extending/shrinking reaction. Additionally, for simulation of shrinking, we also compared the case with nickase and the case without nickase. The simulation model are shown below. 
+                    
+                </p>
+                <p>
+                    First, the shrinking model is shown below.
+                </p>
+                 <div class="img100">
+                    <img src="sim_imgs/Sim_Rea_2.png" width="100%" border="0" alt="">
+                    <p> fig.2 . 3  Schematic illustrations of the simulation model for RHCR shrinking</p>
+                </div>    
+                
+                <div class="img100">
+                    <img src="sim_imgs/Sim_Rea_3.png" width="100%" border="0" alt="">
+                    <p> fig.2 . 3  Schematic illustrations of the simulation model for RHCR shrinking</p>
+                </div>  
+                
+                <div class="img100">
+                    <img src="sim_imgs/Sim_Rea_4.png" width="100%" border="0" alt="">
+                    <p>fig.4 Shrinkage reaction model diagram without nickase</p>
+                </div>  
+                
+                <div class="img100">
+                    <img src="sim_imgs/Equation5.png" width="100%" border="0" alt="">
+                </div>  
+                
+                <div class="img100">
+                    <img src="sim_imgs/Sim_Rea_5.png" width="100%" border="0" alt="">
+                    <p>fig.5. Simulation results of shrinkage reaction with nickase</p>
+                </div>  
+                
+                <div class="img100">
+                    <img src="sim_imgs/Sim_Rea_6.png" width="100%" border="0" alt="">
+                    <p>fig.5. Simulation results of shrinkage reaction with nickase</p>
+                </div>  
                 
                 
             </div>
