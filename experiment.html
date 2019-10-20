@@ -114,8 +114,8 @@ $(document).ready(function() {
     <div class="head1"></div>
     <div class="head2"><a><a>TeamSendai<br>Jack and DNA stalk</a></a></div>
     <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
-    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
-"><div class="head4"></div></a> 
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3">
+    <div class="head4"></div></a> 
 </div>
         </div>
           
@@ -284,53 +284,163 @@ $(document).ready(function() {
     <div class="main2">
          
          <div class="container">
+             <br><br><br>
+             <h2>Experiment</h2>
+             <p>In the following experiments, we confirmed the function of  RHCR extend/shrinking.</p>
              
-             
-             
+             <h3>Purpose & Method</h3>
              <p>
-                    (See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for further information about the experiments)
-</p>
-                 <h5>Incubation time (Fig.S1)</h5>
-                 <h5>Thermo condition</h5>
-                 <h5>Hairpin DNAs concentration</h5>
-                 <h5>Reaction limitation by R’</h5>
-                 </div></div>
-          
-          <div class="main">
+                  Before we test the RHCR , we examined the conventional HCR by electrophoresis based on Vencataraman et al., 2007. Performing experiments on conventional HCR makes it possible to investigate both validity and experimental condition of RHCR, like temperature, annealing profile and buffer condition. After conventional HCR,  we examined the sign of HCR with our designed RHCR sequence. Then, we examined the RHCR shrinking.
+                  For the experiments, we performed both polyacrylamide gel electrophoresis (PAGE) and agarose gel electrophoresis  <a href="supplement.html">(See Material & Method for further information about electrophoresis)</a> . By performing electrophoresis, we could quantitatively evaluate DNA extending/shrinking. The results and discussions are shown in the following sections.  
+             </p>
+             <br>
+             <h3>Results & Discussion</h3>
+             <p><strong>Conventional HCR</strong></p>
+             <p>First, we tried to reproduce the experiment of Vencataraman et al., 2007 (Fig.1) . We reproduced almost exactly the same experiment condition except for running buffer condition. The results are shown below. (We call A as initiator because theoretically A opens RH1, led to HCR. And we call RH1,RH2 as hairpin DNAs necessary for polymerization, RH1-rel, RH2rel as releaser DNAs necessary for the shrinking.)</p>
          
-         <div class="container">
-             <p>Confirm the most stable structure of our DNA by annealing.(Fig.4)(See <a href="Material.html" style="font-size: 24px;">Material &amp; Method</a> for
-further information about annealing)</p>
-             
-            <div class="image70">
-                <p>A</p>    
-                <img src="imexperiment/Fig.4A.png" id="gazo"   
-                width="100%" border="1" alt="">
-                <p>B</p>    
-                <img src="imexperiment/Fig.4B.png" id="gazo"   
-                width="100%" border="1" alt="">
-                 <p>Fig.4
-                 </p> 
-             </div>
-            <h3>Summary<hr></h3>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.1.1019.png" width="100%" border="0" alt="">
+                 <p>fig.1 Confirmation of HCR extending</p>
+                 <h6>The concentration is indicated for each DNA (μM) . The concentration ratio between 07A,07R and 07H1, 07H2 is  1:10.  Annealing indicates the samples listed are annealed in their mixed state (From 95 degrees to 4 degrees, -1℃ per min). Reaction was done in 1×SPSC buffer, and incubated overnight at RT. Hairpins were annealed before the reaction. Run in 2% agar gel with 100v /30mins at 4℃. 100 bp ladder was applied on the left edge. </h6>
+            </div>
+            
+            <p>As a result,  DNA extending by HCR was successfully observed (fig.1).  The bands observed around 20 bp were structures in the form of hairpins (Lane4-14). Smear bands were observed in the lane of H1 and H2 without Initiator (Lan9&10) . This is considered to be an effect of a leak reaction caused by non-specific opening of H1 and H2 . The progression of HCR was significantly observed when the Initiator was added to the solution with hairpins (Round 700-800 bp enough for 14-16 mer. Lane9&13) . We also performed the experiment to confirm HCR extending in cutsmart  buffer to combine with Nickase. The result is shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.2.1019.png" width="100%" border="0" alt="">
+                 <p>fig.2 Reaction buffer change did not affect HCR extending.</p>
+                 <h6>The concentration is indicated for each DNA (μM) . The concentration ratio between 07A,07R and 07H1, 07H2 to be 1:10.  Annealing indicate the samples listed are annealed in their mixed state (From 95 degrees to 4 degrees, -1℃ per min.) Reaction in 1×SPSC buf or 1×cutsmart buf overnight at RT. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃. </h6>
+            </div> 
+            <p>As a result, we found that buffer did not affect HCR extending (fig.2) . Hereafter, we decided to use cutsmart buffer. </p>
+            
+            
+            <h3>RHCR extending</h3>
+            <p>Second, we conducted the RHCR extending experiment.  We applied the experimental condition that we have found in the previous experiments. The results are shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.3.1019.png" width="100%" border="0" alt="">
+                 <p>fig.3 Confirmation of DNA extending of our designed RHCR.</p>
+                 <h6>The concentration ratio was changed to observe gradual polymerization by HCR (Lane6,7&8) . In order that the inter-molecular reaction get promoted, the sample with higher concentration was prepared (Lane9) .Reaction in 1×cutsmart buf overnight at RT. DNA hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.  The concentration is indicated for each DNA (μM) . The concentration ratio between 07A,07R and 07H1, 07H2 to be 1:10.  Annealing indicate the samples listed are annealed in their mixed state (From 95 degrees to 4 degrees, -1℃ per min).</h6>
+            </div> 
+            <p>As a result, the progression of HCR was observed successfully when Initiator was added to the solution (Lane 4&8)  (Fig.3). Additionally, the gradual polymerization was observed when the concentration ratio was increased (Lane 6,7&8), grown up to over 1,000 bp that is equivalent to more than 20mer (Lane9), while the limit of the longest DNA was already observed in the small ratio for the sample without R. Thus, this data suggests that there is a high possibility for our designed DNA to extend well enough. </p>
+            
+            <h3>Cleavage by Nickase</h3>
+            <p>Before proceeding to the RHCR shrinking experiment,  we examined the experiment condition of Nickase.  Nicking by Nickase is necessary for our mechanism. The result is shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.4A.1019.png" width="100%" border="0" alt="">
+            </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.4B.1019.png" width="100%" border="0" alt="">
+            </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.4C.1019.png" width="100%" border="0" alt="">
+                 <P> fig.4 Evaluation of Nickase activity</P>
+                 <h6>
+                    A. Reaction in either 1×cutsmart buf or 1×SPSC buf for 1hr at 37 degrees.  Samples in odd number are in 1×SPSC buf, while samples in even number are in 1×cutsmart buf.. Samples were annealed before the reaction. Run in 15% polyacrylamide gel at 100v for 90mins at 4℃ with 20bp ladder. Dilution into 0.1μM. (See Supplementary for buffer change experiment with Nickase.
+                 </h6>
+                 <h6>
+                     B. Fluorescence intensity analysis of nicked sequence. The ratio of nicked sequence (=bottom) over the un-nicked sequence (=up) was evaluated. The Fluorescence intensity was measured by “integrated density” function of Fiji. To get rid of the effect of background intensity, corrected value was applied for calculation (=Bottom corrected, Up corrected). The equation is expressed as (Bottom corrected)/(Bottom corrected +Up corrected). 
+                 </h6>
+                 <h6>
+                     C.The analysis result for evaluation of Nickase activity.
+                 </h6>
+            </div> 
             <p>
-                During the first half of our experiment, HCR progression was observed. Although we found out
-that our DNA doesn’t form polymer as a stable structure during the latter half of the experiment, we
-conducted some other experiments to find out the better experimental condition to confirm HCR. (See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for other electrophoresis results). Thus, there is a high possibility that we
-could replicate the gel swelling and shrinking in our future experiment.
+                As a result, we confirmed a band below 20 bp, suggesting Nickase worked correctly (Fig.5A). Furthermore, we performed the analysis about how much targeted sequence was nicked by Nickase, and found that nearly 20% of it was nicked correctly. 
+                Thus, we applied the above condition for Nickase experiment.
             </p>
-                 
-            <h3>Information<hr></h3>
             
-           <a href="supplementary.html" class="btn-square">Supplementary information</a>
+            <h3>Shrinking by RHCR</h3>
+            <p>We performed the experiment to confirm RHCR shrinking. The result is shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.5.1020.png" width="100%" border="0" alt="">
+                 <p>fig.5 Confirmation of DNA shrinking of our designed RHCR DNA.</p>
+                 <h6>DNAs for extending were annealed in mixed state (Lane2-14), while same samples with Lane 9 in Fig.3 was prepared (Lane15&16). Both Nickase and releasers were added to the samples before the reaction. Reaction for 1hr at 37 degrees. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.</h6>
+            </div> 
+            <p>
+                As a result, the shrinking was observed when both Nickase and releasers were added to the extended samples made in advance (Lane 6&8, 9&11, 12&14, 14&16. Especially, from around 1 kb to 400 bp shrinking was observed in Lane12&14), even for the one that incubated overnight (From around 1 kb to 900 bp. Lane 15&16) (Fig.6). Furthermore, releasers are not enough for shrinking (Lane 6&7, 9&10, 12&13, and 17&15). 
+                There remains a possibility that the shrinking occur only by Nicking. We conducted an experiment to check that possibility. The result is shown below.
+            </p>
             
-           <a href="Material.html" class="btn-square">Material &amp; Method</a>
-             
+            <div class="img100">
+                 <img src="experiment_imgs/fi.6.1019.png" width="100%" border="0" alt="">
+                 <p>fig.6 Nicking is not enough for shrinking</p>
+                 <h6>DNAs for extending were annealed in mixed state. Both Nickase and releasers were added to the samples before the reaction. Reaction for 1hr at 37 degrees. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.</h6>
+            </div> 
+            
+            <p>
+            According to the result, although the shrinking only by Nicking was observed, more shrinking 
+            was observed with both Nickase and releasers (With both Nickase and releasers, around 600 bp shrinking 
+            was observed ,while 100bp shrinking with only Nickase. Lane 15&16). Thus, it is strongly suggested that our
+            RHCR mechanism worked correctly.  There remains another concern whether shrinking was really carried out maintaining 
+            the A and R as the end of extended DNA. In order to confirm this worked correctly, we came up with an idea to
+            observe the formed structure by Atomic Force Microscopy (AFM) which we could observe the 3d structures of the sample. 
+            If we could calculate the length between A and R (the crosslinking point),  we could show that our system worked correctly. 
+            Before that, we observed the same sample with Lane 12 & 14 (fig.6) to validate the experimental condition of AFM. The result is shown below.
+            </p>
+            
+             <div class="img100">
+                 <img src="experiment_imgs/fi.7.A_B.1019.png" width="100%" border="0" alt="">
+             </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.7.A_B.1020.png" width="100%" border="0" alt="">
+            </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.7.C.1019.png" width="100%" border="0" alt="">
+                 <p>fig.7 AFM image of the products by both before/after shrinking reaction.</p>
+                 <h6>
+                    (A) One spot image of the samples before shrinking reaction. Observed in Tris-EDTA buf. Diluted into 60nM. 400*300*20(nm3).scale bar indicates 50nm.
+                 </h6>
+                 <h6>
+                    (B)One spot image of the samples after shrinking reaction. Observed in Tris-EDTA buf. Diluted into 600nM. 400*300*20(nm3). Scale bar indicates 50 nm.
+                </h6>
+                <h6>
+                    (C)Analysis result about length of the observed structures. We selected 100 products at random (4 samples for each observed spot) and measured the length manually with Fiji. Average of the before /after shrinking is 273.8281721 and 61.90713529 bp, and SD is 173.0661769 and 26.16084231. T value is 4.44043E-21. Maximum length of the before/after shrinking is 1046.673971 and 166.0822059bp. 
+                 </h6>
+            </div> 
+            
+            <div class="img100">
+                 <img src="experiment_imgs/fi.8.1019.png" width="100%" border="0" alt="">
+                 <p>fig.8 AFM images and schematic illustrations of formed structures before/after shrinking</p>
+            </div> 
+            <p>As a result, the shrunk products were significantly observed after shrinking reaction (Fig.8A,B&C). 
+                As illustrated in Fig.9, extended products with various lengths were observed, suggesting that HCR extending
+                successfully occurred (Before shrinking). This result matches with the electrophoresis result in which various-sized
+                products were observed with equal fluorescence intensity (Fig.7, Lane14) . In the other hand, most of shrunk products 
+                were observed around 100bp that equals to the size of dimer, suggesting that extended products shrunk to the original state of A&B. 
+                Thus, if we could mark the crosslinking point, A&R, we may completely prove the functionality of RHCR.
+            </p>
+            <h3>Summary&Future</h3>
+            <p>From the results above, we conclude that the functionality of our RHCR system was successfully confirmed by 
+                the experiments. We listed both what we have done and  what we need to investigate more.  What we have done
+            </p>
+            
+            <ul>
+                <li>Reproducing the HCR experiment of Vencatarman et al., 2007. </li>
+                <li>Verifying experiment condition for HCR.</li>
+                <li>Performing HCR extending with our RHCR system.</li>
+                <li>Suggesting high possibility for shrinking of our RHCR system.</li>
+                <li>Determining experiment condition for AFM imaging. </li>
+            </ul>
+         
+            <p>What we need to investigate more</p>
+            <ul>
+                <li>Confirming reversibility of our RHCR system.</li>
+                <li>Confirming whether our RHCR system works correctly maintaining connectivity. </li>
+            </ul>
+          
 
-             
             
-</div>
-</div>   
+            <p>(See <a href="supplementary.html" style="font-size: 24px;">Supplementary information</a> for further information about the experiments)</p>
+             
+          
+            <div class="main">
+                <div class="container">
+                   <h3>Information<hr></h3>
+                    <a href="supplementary.html" class="btn-square">Supplementary information</a>
+                    <a href="Material.html" class="btn-square">Material &amp; Method</a>
+                </div>
+            </div>   
+            
+            
 <!-- =============================================================== -->      
         <div class="footer">
                  <div class="footer-left">
