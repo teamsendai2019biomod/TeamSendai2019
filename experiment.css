@@ -2,13 +2,13 @@
     background-image: url("images1/exicon1.png");
         background-repeat: no-repeat;
         background-position: left;
-        background-size: contain;
+        background-size: cover;
 }
 .iconbox3{
 background-image: url("images1/exicon.png");
         background-repeat: no-repeat;
         background-position: left;
-        background-size: contain;
+        background-size: cover;
 }
 
 @media screen and (min-width: 768px){
