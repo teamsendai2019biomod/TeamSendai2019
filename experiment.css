@@ -4,33 +4,37 @@
     width: 600px;
     height: 430px;
     display: flex;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 .iconbox a{
     text-decoration:none;
+    }
+    .iconbox p{
+        margin: 30px;
+        
     }
     .iconbox p{size: 120%;}
 .iconbox2{
     width: 590px;
     height: 200px;
     display: block;
-    margin:auto;
+    margin:0;
     padding: 10px;
 }
 .iconbox3{
     width: 290px;
-    height: 190px;
+    height: 130px;
     border: solid 10px darkgrey;
     border-radius: 30px;
-    margin: 5px;
+    margin: 0px 5xp 3px 0px;
     padding: 0;
     background-color: lightgrey;
 }
 
     .iconbox3a{
     width: 290px;
-    height: 119px;
+    height: 99px;
     border: solid 10px darkgrey;
     border-radius: 30px;
     margin: 5px;
@@ -53,7 +57,7 @@
     height: 80px;
     border: solid 10px steelblue;
     border-radius: 30px;
-    margin: 5px;
+    margin: 5px 0px 0px 5px;
     padding: 0;
     background-color: skyblue;
 }
@@ -64,7 +68,7 @@
         margin-right: auto;
         padding: auto;
     }
-    
+
     
 .TMl{
     min-width:200px;
@@ -87,8 +91,8 @@
     width: 300px;
     height: 215px;
     display: flex;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 .iconbox a{
     text-decoration:none;
@@ -98,7 +102,7 @@
     width: 295px;
     height: 100px;
     display: block;
-    margin:auto;
+    margin:0;
     padding: 5px;
 }
 .iconbox3{
@@ -113,7 +117,7 @@
 
 .iconbox3a{
     width: 145px;
-    height: 119px;
+    height: 45px;
     border: solid 10px darkgrey;
     border-radius: 30px;
     margin: 5px;
@@ -140,6 +144,14 @@
 }
 
     .iconbox4 > p{
+        font-size: 70%;
+        margin-left: 10px;
+        margin-top: 13px;
+        margin-right: auto;
+        padding: auto;
+    }
+    
+.iconbox3a > p{
         font-size: 70%;
         margin-left: 10px;
         margin-top: 13px;

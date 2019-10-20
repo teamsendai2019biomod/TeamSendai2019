@@ -5,6 +5,8 @@
 }
 
 
+
+
 @media screen and (min-width: 768px){
 
 .member1{
@@ -20,8 +22,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin: 20px;
-    
 }
+    
 .TMl1{
     width:200px;
     height: 200px;
