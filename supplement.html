@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jack and DNA stalk |BIOMOD2019</title>
+    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
+        
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<link rel="stylesheet" media="all" type="text/css" href="style.css" />
+<!-- ※デフォルトのスタイル（style.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="tablet.css" />
+<!-- ※タブレット用のスタイル（tablet.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+<!-- ※スマートフォン用のスタイル（smart.css） -->
+        
+        
+        <link rel="stylesheet" href="experimentwiki.css">
+        
+        <link rel="stylesheet" href="experiment.css">
+        <link rel="stylesheet" href="reponsive.css">
+        
+        <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+        
+        
+        
+    </head> 
+    
+    
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+  
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     
+ <script> 
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+<script>    
+    $(function() {
+  $('.toggle').click(function() {
+    $(this).toggleClass("active");
+		if($(this).hasClass('active')) {
+			$('.global_nav').addClass('active');
+		} else {
+			$('.global_nav').removeClass('active');
+		}
+  });
+});
+    </script>    
+    
+    
+<!--============閉会ボタン===========================-->
+<script>
+   $(function(){
+   $("ul.children").after("<span class='accordionBtn'></span>");
+   $("ul.children").hide();
+   $("ul .accordionBtn").on("click", function() {
+     $(this).prev("ul").slideToggle();
+     $(this).toggleClass("active");
+   });
+});    
+    </script>
+    
+    
+<!--==================================================-->
+  <script>
+      var startPos = 0,winScrollTop = 0;
+    $(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header').addClass('hide');
+        $('.global_nav').addClass('hide');
+    } else {
+        $('.header').removeClass('hide');
+        $('.global_nav').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+    </script>
+    
+    
+    <script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+    
+    
+ 
+    
+      <body>
+<!-- =======================header====================================================== -->    
+<!-- =======================header====================================================== -->            
+          <div class="header">
+
+            
+<div class="header-left">
+    <div class="head1"></div>
+    <div class="head2"><a><a>TeamSendai<br>Jack and DNA stalk</a></a></div>
+    <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
+"><div class="head4"></div></a> 
+</div>
+        </div>
+<!-- =======================header====================================================== -->  
+<!-- =======================header====================================================== -->  
+          
+          
+<div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>        
+
+                         
+ <!--===================================================-->
+<!--===================================================-->
+<!--===================================================-->
+ <div class="global_nav" body ontouchstart=""> 
+   <!-- <div class="glnavleft">
+    <li class="nav_li"><a href="#menu1">メニュー1</a></li>
+    <li class="nav_li"><a href="#menu2">メニュー2</a></li>
+    <li class="nav_li"><a href="#menu3">メニュー3</a></li>
+    </div>     -->
+<!--===================================================================================nav-->
+        
+    <ul class="nav"> 
+        <li><a href="index.html">Home</a>
+            <ul>
+                <li><a href="index.html#a1">Abstruct</a></li>
+                <li><a href="index.html#a2">Youtube</a></li>
+            </ul>
+        </li>
+
+        <li><a href="background.html">Background</a>
+            <ul>
+                <li><a href="background.html#b1">Motivation</a></li>
+                <li><a href="background.html#b2">Idea</a></li>
+            </ul>
+        </li>
+        <li><a href="design.html">Design</a>
+            <ul>
+                <li><a href="design.html#c1">Mechanism</a>
+                    <ul>    
+                        <li><a href="design.html#c2">HCR</a></li>
+                        <li><a href="design.html#c3">RHCR</a></li>
+                    </ul>
+                </li>
+                <li><a href="design2.html">Sequence Design</a>
+                    <ul>    
+                        <li><a href="design2.html#c4">Extending reaction</a></li>
+                        <li><a href="design2.html#c5">Shrinking reaction</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="simulation.html">Simulation</a>
+            <ul>
+                <li><a href="simulation.html#d1">Free energy estimation</a></li>
+                <li><a href="simulation.html#d2">Reaction rate simulation</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="experiment.html">Experiment</a>
+            <ul>
+                <li><a href="experiment.html#e1">HCR</a></li>
+                <li><a href="experiment.html#e2">RHCR</a>
+                   <ul>
+                       <li><a href="experiment.html#e3">Extending Reaction</a></li>
+                       <li><a href="experiment.html#e4">Nickase cleavage</a></li>
+                       <li><a href="experiment.html#e5">Shrinking Reaction</a></li>
+                   </ul>
+                </li>
+                <li><a href="material.html">Material and Method</a></li>
+                <li><a href="supplement.html">Supplementary</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="future.html">Future</a></li>
+        
+        <li><a href="team.html">Team/ELSI</a>
+            <ul>
+                <li><a href="team.html#g1">Member</a></li>
+                <li><a href="team.html#g2">Menter</a></li>
+                <li><a href="team.html#g3">Supecial Thanks</a></li>
+                <li><a href="elsi.html">ELSI</a></li>
+            </ul>
+        </li>
+        
+
+
+    <div class="box1">
+        <a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
+        
+        <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3">
+            <div class ="yt1">YouTube</div>
+        </a>  
+    </div>       
+
+        
+              
+         
+
+    </ul>   
+<!--===========================================-->
+
+    
+    </div>  
+<!--===================================================-->
+<!--===================================================-->
+<!--===================================================-->
+
+             
+             
+             
+      
+                   
+             
+             
+             
+<!--======================MAIN===================-->          
+            <br><br><br>
+ <div class="main">
+     <div class="container">
+             <div class=topic><h2>Supplementary</h2></div>
+         
+         <div class="iconbox">
+             <div class="iconbox2">
+                <a href="experiment.html#e1"><div class="iconbox3">
+                       <p>Conventional<br>HCR</p>
+                </div></a>
+                <div class="iconbox3b">
+                    <a href="material.html"><div class="iconbox4">
+                        <p>Material and Method</p>
+
+                    </div></a>
+                    <a href="supplement.html"><div class="iconbox4">
+                        <p>Supplementary</p>
+                    </div></a>
+
+                 </div> 
+         
+         
+             </div>
+             <div class="iconbox2">
+                
+                 <a href="experiment.html#e3"><div class="iconbox3a">
+                        <p>RHCR<br>extending</p>
+                </div></a>
+                 <a href="experiment.html#e4"><div class="iconbox3a">
+                        <p>RHCR<br>Nickase cleavage</p>
+                </div></a>
+                <a href="experiment.html#e5"><div class="iconbox3a">
+                     <p>RHCR<br>shrinking</p>
+                    </div></a>
+                
+         
+         
+             </div>
+         
+         
+         </div>
+         <p>We will also show the figures for the supportive electrophoresis results used
+in the Experiment part.</p>
+    
+        </div>
+ </div>
+    
+    <div class="main2">
+         
+         <div class="container">
+             
+             <h3>Nickase working condition experiment</h3>
+             <p>
+                   We performed the experiment to confirm Nickase could also work in SPSC buffer, which was used for
+HCR in Vencatarman et al.,2007. The result is shown below.
+
+</p>
+             
+             
+              <div class="img70">
+                    <img src="imgsupsup/fig.S1.png"  width="100%" border="1" alt="">
+                  <p>fig.S1 Buffer change affect Nickase work</p>
+                  <h6>Reaction in either 1×cutsmart buf or 1×SPSC buf for 1hr at 37 degrees. Samples were annealed before the reaction. Run in 15%
+polyacrylamide gel at 100v for 90mins at 4℃ with 20bp ladder. Dilution into 0.1μM. Red rectangle indicates the sample in
+
+cutsmart buf with Nickase, blue rectangle indicates the sample in SPSC buf with Nickase.</h6>
+             </div> 
+             
+             <p>As a result, nicking did not occur in SPSC buffer although it occurred in cutsmart buffer (Lane10&amp;12) .
+Furthermore, Nickase concentration does not affect nicking (lane10&amp;13) .</p>
+             
+             
+             
+             <h3>RHCR extending: reaction time confirmation experiment</h3>
+<p>In order to find out how long RHCR extending takes, we performed the extra experiments. Moreover, we can deduct simulation
+    condition with this experiment.</p>
+             <div class="img70">
+                    <img src="imgsupsup/fig.S2.png"  width="100%" border="1" alt="">
+                    <p>fig.S2 Reaction time change did not affect extending(0min~60min)</p>
+                 <h6>Reaction in 1×cutsmart buf for various minutes at RT. DNA hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at
+4℃.</h6>
+             </div>  
+                   
+             <div class="img70">
+                    <img src="imgsupsup/fig.S3.png"  width="100%" border="1" alt="">
+                 <p>fig.S3 Reaction time change affected extending(0hr~10hr)</p>
+                 <h6>Reaction in 1×cutsmart buf for various hours at RT. DNA hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.</h6>
+             </div>  
+                    
+             
+             <div class="img70">
+                    <img src="imgsupsup/fig.S4.png"  width="100%" border="1" alt="">
+                    <p>fig.S4 Reaction time change affected extending(1 day~8 days)</p>
+                  <h6>Reaction in 1×cutsmart buf for various days at RT. DNA hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.</h6>
+             </div> 
+             
+             <p>As a result, we concluded that RHCR extending occurs in a short time and continuously extend to 1kb.
+(fig.S1-S3)</p>
+             
+             <h3>RHCR reversibility confirming experiment</h3><p>
+In order to confirm RHCR reversibility, we added extra hairpins to the after-shrinking sample. The result
+is shown below.</p>
+             
+             
+
+             <div class="img70">
+                    <img src="imgsupsup/fig.S5.png"  width="100%" border="1" alt="">
+                    <p>fig.S5 Reversibility examination of our RHCR system</p>
+                 <h6>The same sample as Fig.7 were used. Extra hairpins were added (Lane6,7, 13,17). Reaction in 1×cutsmart buf overnight at RT. Run in 2% agar gel
+
+at 50v for 80mins at 4℃.</h6>
+             </div>
+                 
+                 <p>As a result, no difference was observed between the leak reaction and re-extending (Lane6 &amp; 17)
+,suggesting HCR extending was not carried out in after-shrinking sample. There may be some problems
+with sequence design of our system. <br><br>
+Next, we performed the experiments to confirm both RHCR shrinking and reversibility. The result is
+shown below.</p>
+
+
+<p>This buffer was prepared for washing BSA in cutsmart buffer.  The component of buffer consist of reagent shows below.
+    Buffer Components (pH 8.0)</p>
+
+             <div class="img70">
+                    <img src="imgsupsup/fig.S6.png"  width="100%" border="1" alt="">
+                 <p>fig.S6 Reversibility and shrinking examination of our RHCR system</p>
+             </div>
+                 
+                 
+                 <p>RHCR extending was performed first. After that, both Nickase and releasers were added to the samples before the
+reaction. Reaction for 1hr at 37 degrees. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for
+80mins at 4℃.<br><br>
+As a result, we could confirm that our system achieved RHCR shrinking. (Lane10 &amp; 13), while we could not observe
+shrinking in lane only with hairpins.<br><br>
+Furthermore, we still could not confirm RHCR reversibility.<br><br>
+Thus, in the future, we are going to perform the experiments to observe re-extending/shrinking reaction.
+                 </p>
+                 
+            
+</div>
+</div>   
+<!-- =============================================================== -->      
+        <div class="footer">
+            
+            <p class="pagetop"><a href="#wrap">▲<br>Top</a></p>
+            
+                 <div class="footer-left">
+                     <a href="https://www.tohoku.ac.jp/en/"><div class="tohokuicon"></div></a>
+                     <a href="http://www.molbot.mech.tohoku.ac.jp/eng/index.html"><div class="labicon"></div></a>
+                     <a href=""><div class=""></div></a>
+                 <div class="box2">
+<a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3
+"><div class ="yt1">YouTube</div></a>  </div>     
+                    
+                 </div>
+                 <div class="footer-right">
+                     &copy;Team Sendai 2019
+                 </div>
+                 <div class="clear"></div>
+              </div>  
+        
+         
+     
+    </body>
+</html>

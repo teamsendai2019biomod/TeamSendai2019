@@ -1,3 +1,16 @@
+.iconbox3a{
+    background-image: url("images1/exicon1.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+}
+.iconbox3{
+background-image: url("images1/exicon.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+}
+
 @media screen and (min-width: 768px){
 
 .iconbox{
@@ -25,9 +38,9 @@
 .iconbox3{
     width: 290px;
     height: 130px;
-    border: solid 10px darkgrey;
+    border: solid 5px darkgrey;
     border-radius: 30px;
-    margin: 0px 5xp 3px 0px;
+    margin-left: 10px;
     padding: 0;
     background-color: lightgrey;
 }
@@ -35,7 +48,7 @@
     .iconbox3a{
     width: 290px;
     height: 99px;
-    border: solid 10px darkgrey;
+    border: solid 5px darkgrey;
     border-radius: 30px;
     margin: 5px;
     padding: 0;
@@ -55,7 +68,7 @@
 .iconbox4{
     width: 290px;
     height: 80px;
-    border: solid 10px steelblue;
+    border: solid 5px steelblue;
     border-radius: 30px;
     margin: 5px 0px 0px 5px;
     padding: 0;
@@ -108,17 +121,17 @@
 .iconbox3{
     width: 145px;
     height: 78px;
-    border: solid 5px darkgrey;
-    border-radius: 15px;
+    border: solid 3px darkgrey;
+    border-radius: 30px;
     margin: 3px;
     padding: 0;
     background-color: lightgray;
 }
 
 .iconbox3a{
-    width: 145px;
-    height: 45px;
-    border: solid 10px darkgrey;
+    width: 160px;
+    height: 57px;
+    border: solid 3px darkgrey;
     border-radius: 30px;
     margin: 5px;
     padding: 0;
@@ -135,8 +148,8 @@
 }
 .iconbox4{
     width: 145px;
-    height: 40px;
-    border: solid 5px  steelblue;
+    height: 45px;
+    border: solid 3px  steelblue;
     border-radius: 15px;
     margin: 3px;
     padding: 0;
@@ -165,12 +178,12 @@
 
 
 .iconbox3:hover{
-    background-color: aquamarine;
+    opacity: 0.5;
     }
 .iconbox3a:hover{
-    background-color: aquamarine;
+    opacity: 0.5;
     }
 
 .iconbox4:hover{
-    background-color: deepskyblue;
+    opacity: 0.5;
     }
