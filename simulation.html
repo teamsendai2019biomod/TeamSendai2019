@@ -227,10 +227,12 @@ $(document).ready(function() {
     <a id="d1"></a>
         <div class="main">
              <div class="container">
-                <div class=topic><h2>Purpose</h2></div>
+                 
+                <h2>Free energy estimation</h2> 
+                <h3>Purpose</h3>
                 <p>
                      Calculate <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math> for each reaction and quantitatively estimate the feasibility of the RHCR. In addition, based on the calculated free energies, simulate the difference in reaction rate with and without Nicking Endonuclease in the shrinking reaction to confirm the validity of our shrinking method.
-                    The state before four-way branch migration is named <math mathsize="8pt"><mi>P</mi></math> and the state after four-way branch migration is named Q. 
+                    The state before four-way branch migration is named <math mathsize="8pt"><mi>P</mi></math> and the state after four-way branch migration is named <math mathsize="8pt"><mi>Q</mi></math>. 
                     The subscript represents the number of hairpins included in main strand. 
                     In the shrinking reaction, the “polymerization actuator” is nicked (see idea).
                     The nicked <math mathsize="8pt"><mi>P</mi></math> and <math mathsize="8pt"><mi>Q</mi></math> state are called <math mathsize="8pt"><msup><mi>P</mi><mn>'</mn></msup></math> and <math mathsize="8pt"><msup><mi>Q</mi><mn>'</mn></msup></math> state respectively.
@@ -369,14 +371,15 @@ $(document).ready(function() {
                         means the H2 end “polymerization actuator”. b) 2i+1 or 2i-1 represents an odd number, thus <math mathsize="8pt"><msub><mi>Q</mi><mn>2i+1</mn></msub></math>or <math mathsize="8pt"><msub><mi>Q</mi><mn>2i-1</mn></msub></math> means the H1 end “polymerization actuator”.
                     </h6>
                 </div>
-                <div class=topic><h2>Method</h2></div>
-                <p>
+             
+                <h3>Result</h3>
+                
+                 <p>
                     The free energy was calculated using the structure prediction software called NUPACK. 
                     Here, We assume that temperature is 37 degrees, 1M NaCl. 
-                     However, since NUPACK returns only the most stable structure, we cannot compare the energy of the Q and P states which comprise of the same DNA species by using NPACK.
+                     However, since NUPACK returns only the most stable structure, we cannot compare the energy of the <math mathsize="8pt"><mi>Q</mi></math> and <math mathsize="8pt"><mi>P</mi></math> states which comprise of the same DNA species by using NPACK.
                     Therefore, we complementary calculated the free energy in the manual using the nearest neighbor model and simultaneous equations of enthalpy and entropy( Because <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math>  can be expressed as <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi><mo>=</mo><mo>&Delta;</mo><mi>H</mi><mo>-</mo><mi>T</mi><mo>&Delta;</mo><mi>S</mi></math> (&Delta;H: entropy. &Delta;S: enthalpy ) and  &Delta;H,&Delta;S is temperature dependant, we can estimate the free energy at 37 degrees by solving the simultaneous equations. Only if we can obtain the desired structure in NUPACK at a certain temperature.)
                 </p>
-                <div class=topic><h2>Result</h2></div>
                
                 <h4>The calculation of
                     <math mathsize="8pt">
@@ -399,11 +402,11 @@ $(document).ready(function() {
                 <div class="img70">
                     <img src="sim_imgs/Sim_Fre_Figure2.png" width="100%" border="0" alt="">
                     <p>fig.2 The different structure part between <math mathsize="8pt"><msub><mi>Q</mi><mn>2i</mn></msub></math> and <math mathsize="8pt"><msub><mi>P</mi><mn>2i</mn></msub></math></p>
-                    <h6>The domain surrounded by circle in Q state newly makes duplex in P state.</h6>
+                    <h6>The domain surrounded by circle in <math mathsize="8pt"><mi>Q</mi></math> state newly makes duplex in <math mathsize="8pt"><mi>P</mi></math> state.</h6>
                 </div>
                 
                 <p>
-                    As shown in figure2, when the Q state shift to the P state, newly the purple domain forms duplex, and the red domain forms the hairpin loop.
+                    As shown in figure2, when the <math mathsize="8pt"><mi>Q</mi></math> state shift to the <math mathsize="8pt"><mi>P</mi></math> state, newly the purple domain forms duplex, and the red domain forms the hairpin loop.
                     The Gibbs energy change can be obtained by subtracting the dangling end energy and adding the hairpin loop energy, duplex energy. &Delta;G of this reaction can be expressed by the following equation.
                 </p>
                 
@@ -515,7 +518,7 @@ $(document).ready(function() {
                     could be obtained at 38 degrees and 39 degrees. The results are  -123.49(kcal/mol),  -121.86(kcal/mol), respectively. We can obtain the free energy at 37 degrees by solving the simultaneous equations shown below.
                 </p>
                 <section class="stimulus" align="center">
-                    <math>
+                    <math  mathsize="8pt">
                       <mo>{</mo>
                       <mtable>
                         <mtr>
@@ -581,11 +584,11 @@ $(document).ready(function() {
                 <div class="img70">
                     <img src="sim_imgs/Sim_Fre_Figure3.png" width="100%" border="0" alt="">
                     <p>fig.3 The different structure part between <math mathsize="8pt"><msub><mi>Q</mi><mn>2i+1</mn></msub></math> and <math mathsize="8pt"><msub><mi>P</mi><mn>2i+1</mn></msub></math></p>
-                    <h6>The domain surrounded by circle in Q state newly makes duplex in P state.</h6>
+                    <h6>The domain surrounded by circle in <math mathsize="8pt"><mi>Q</mi></math> state newly makes duplex in <math mathsize="8pt"><mi>P</mi></math> state.</h6>
                 </div>
                 
                 <p>
-                    As shown in fig3, when the Q state shift to the P state, newly the light blue domain forms duplex, and the green domain forms the hairpin loop.
+                    As shown in fig3, when the <math mathsize="8pt"><mi>Q</mi></math> state shift to the <math mathsize="8pt"><mi>P</mi></math> state, newly the light blue domain forms duplex, and the green domain forms the hairpin loop.
                     The Gibbs energy change can be obtained by subtracting the dangling end energy and adding the hairpin loop energy, duplex energy. <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math> of this reaction can be expressed by the following equation.
                 </p>
                 
@@ -695,7 +698,7 @@ $(document).ready(function() {
                 </p>
                 
                 <section class="stimulus" align="center">
-                    <math>
+                    <math  mathsize="8pt">
                       <mo>{</mo>
                       <mtable>
                         <mtr>
@@ -744,27 +747,33 @@ $(document).ready(function() {
                 </p>
                 <div class="img100">
                     <img src="sim_imgs/Sim_Fre_Figure4.png" width="100%" border="0" alt="">
-                    <p>fig.4 State Transition Diagram of the shrinking reaction (<msub><mi>Q'</mi><mn>2i</mn></msub></math>→<msub><mi>P'</mi><mn>2i</mn></msub></math>)( H2 end version)</p>
+                    <p>fig.4 State Transition Diagram of the shrinking reaction (<math mathsize="8pt"><msub><mi>Q'</mi><mn>2i</mn></msub></math>→<math mathsize="8pt"><msub><mi>P'</mi><mn>2i</mn></msub></math>)( H2 end version)</p>
                 </div>
                 <div class="img100">
                     <img src="sim_imgs/Sim_Fre_Figure5.png" width="100%" border="0" alt="">
-                    <p>fig.5 State Transition Diagram of the shrinking reaction (<msub><mi>Q'</mi><mn>2i+1</mn></msub></math>→<msub><mi>P'</mi><mn>2i+1</mn></msub></math>)( H1 end version)</p>
+                    <p>fig.5 State Transition Diagram of the shrinking reaction (<math mathsize="8pt"><msub><mi>Q'</mi><mn>2i+1</mn></msub></math>→<math mathsize="8pt"><msub><mi>P'</mi><mn>2i+1</mn></msub></math>)( H1 end version)</p>
                 </div>
                 <p>
-                    The reaction from Q to Q’ is too high to occur autonomously, but this process is driven by enzyme, which is Nicking Endonuclease.
-                    In the shrinking reaction, while the desired structure is P’, the H2 end version favors Q’ than P’(fig.4). However, because ΔG is enough low to occur reversible reaction between Q’ and P’, there is no problem in the shrinking reaction.
-                    We have succeeded in the theoretical explanation that DNA complex shifts to P state by nicking endonuclease.
+                    The reaction from <math mathsize="8pt"><mi>Q</mi></math> to <math mathsize="8pt"><mi>Q'</mi></math> is too high to occur autonomously, but this process is driven by enzyme, which is Nicking Endonuclease.
+                    In the shrinking reaction, while the desired structure is <math mathsize="8pt"><mi>P'</mi></math> , the H2 end version favors <math mathsize="8pt"><mi>Q'</mi></math> than <math mathsize="8pt"><mi>P'</mi></math> (fig.4). However, because ΔG is enough low to occur reversible reaction between <math mathsize="8pt"><mi>Q'</mi></math> and <math mathsize="8pt"><mi>P'</mi></math> , there is no problem in the shrinking reaction.
+                    We have succeeded in the theoretical explanation that DNA complex shifts to <math mathsize="8pt"><mi>P</mi></math> state by nicking endonuclease.
                 </p>
+      
                 
-                 <h1>Simulation of concentration change</h1>
+                <!-- ================== 後半  ====================-->
+                <!-- ================== 後半  ====================-->
+                <!-- ================== 後半  ====================-->
+                
+
+                <h2>Reaction rate simulation</h2>
                 <p>We simulated RHCR extending/shrinking. The simulation model for extending is shown below.</p>
                 
                 <div class="img100">
                      <img src="sim_imgs/Sim_Rea_1.png" width="100%" border="0" alt="">
-                    <p>fig.1 Schematic illustrations of the simulation model for RHCR extending</p>
+                    <p>fig.6 Schematic illustrations of the simulation model for RHCR extending</p>
                 </div>
                 
-                <p>The state with only A and R is defined as Q0, then H1 hairpin binds to the toehold sequence to make P1. Next, P1 changes to Q1 through the four-way branch migration. Then, H2 hairpin binds to the Q1 toehold sequence covered with purple to make Q2 by  branch migration.We regard these reactions as 1 cycle. DNA extending occurs repeating this cycle over and over again.
+                <p>The state with only A and R is defined as Q0, then H1 hairpin binds to the toehold sequence to make <math mathsize="8pt"><msub><mi>P</mi><mn>1</mn></msub></math>. Next, <math mathsize="8pt"><msub><mi>P</mi><mn>1</mn></msub></math> changes to Q1 through the four-way branch migration. Then, H2 hairpin binds to the Q1 toehold sequence covered with purple to make Q2 by  branch migration.We regard these reactions as 1 cycle. DNA extending occurs repeating this cycle over and over again.
                    The method of calculating the reaction rate in the simulation is described as follows. First, the reaction rate of hairpin binding is 
                    <math mathsize="8pt"><msup><mn>10</mn><mn>6</mn></msup><msup><mi>(mol/L)</mi><mn>-1</mn></msup></math>
                    in the 6 bases or more toehold sequence[DavidYu Zhang  et al. (2009)]. In our design, the toehold sequence of red and green color is 10 bases, the reaction rate is considered to be
@@ -830,35 +839,106 @@ $(document).ready(function() {
                     
                 </p>
                 <p>
-                    First, the shrinking model is shown below.
+                    Next, the shrinking model is shown below.
                 </p>
                  <div class="img100">
                     <img src="sim_imgs/Sim_Rea_2.png" width="100%" border="0" alt="">
-                    <p> fig.2 . 3  Schematic illustrations of the simulation model for RHCR shrinking</p>
+                    <p> fig.7  Schematic illustrations of the simulation model for RHCR shrinking</p>
                 </div>    
+                <p>
+                    In the above figure, <math mathsize="8pt"><msub><mi>Q'</mi></math> is the state with six bases removed by Nickase at the end of <math mathsize="8pt"><mi>Q</mi></math>. <math mathsize="8pt"><msub><mi>Q''</mi></math> is the state of <math mathsize="8pt"><mi>Q</mi></math> hybridized with releasers, and <math mathsize="8pt"><mi>Q’’’</mi></math> is the state with another 6bp  removed from the end bases of <math mathsize="8pt"><mi>Q’’’</mi></math>. <math mathsize="8pt"><msub><mi>P'''</mi></math> is the <math mathsize="8pt"><mi>Q’’’</mi></math> after four-way branch migration, while <math mathsize="8pt"><msub><mi>P''</mi></math>  is the state of <math mathsize="8pt"><mi>P</mi></math> hybridized with releasers. <math mathsize="8pt"><msub><mi>P'</mi></math> is the state of <math mathsize="8pt"><msub><mi>Q'</mi></math> after four-way branch migration. 
+                    In this model, the shrinking reaction occurs by the combination of three reactions below. 
+                </p>
+                <ol>
+                    <li>
+                        <p>Nickase reaction</p>
+                        <p>The first reaction is the removal of 6 bases at the end by nickase.  This reaction is irreversible reaction because of nickase activity. The precise reaction rate of nickase is expected to be determined from the experiment result, but this time because of time constrains, it was set to be 2.67×10⁻⁹L・unit⁻¹・s⁻¹ referring to the article. [Nicking enzyme-controlled toehold regulation forDNA logic circuits]</p>
+                    </li>
+                    <li>
+                        <p>Four-way branch migration</p>
+                        <p>
+                            The second reaction is the reaction from <math mathsize="8pt"><mi>P</mi></math> to <math mathsize="8pt"><mi>Q</mi></math> through the four-way branch migration. Since the previous section shows that the free energy change before/after the reaction is small, this reaction is considered to be reversible.  If the six bases at the end is not removed by nickase, the reaction rate of the reaction is similar as the four-way branch migration of the extension reaction, corresponding to
+                            <math mathsize="8pt">
+                                <msub>
+                                    <mi>Q</mi><mi>n+1</mi>
+                                </msub>
+                                <mi>&harr;</mi>
+                                <msub>
+                                    <mi>P</mi><mi>n+1</mi>
+                                </msub>
+                            </math>
+                            reaction in the above figure. By applying the equation of
+                            <math  mathsize="8pt">
+                                <mfrac>
+                                    <mrow>
+                                        <msub><mi>k'</mi><mo>-</mo></msub>
+                                    </mrow>
+                                    <msub><mi>k'</mi><mo>+</mo></msub>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mi>exp</mi>
+                                <mi>(</mi>
+                                <mo>-</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>&Delta;</mi><mi>G</mi>
+                                    </mrow>
+                                    <mn>
+                                        <msub><mi>K</mi><mi>b</mi></msub> <msub><mi>N</mi><mi>a</mi></msub> <mi>T</mi>
+                                    </mn>
+                                </mfrac>
+                                <mi>)</mi>
+                            </math>
+                            derived from the formula of Arrhenius and the free energy change 
+                            <math mathsize="8pt"><mi>&Delta;</mi><mi>G</mi></math>(=0.01kcal/mol) 
+                            obtained in the preceding paragraph, the reaction rate k+ from <math mathsize="8pt"><mi>P</mi></math> to <math mathsize="8pt"><mi>Q</mi></math> and the reaction rate  k-' from <math mathsize="8pt"><mi>Q</mi></math> to <math mathsize="8pt"><mi>P</mi></math> were set to b
+                            e 10⁻¹(sec)⁻¹ and 0.098(sec)⁻¹ respectively .
+                        </p>
+                    </li>
+                    <li>
+                        <p>Releaser-binding reaction</p>
+                        <p>
+                            The third reaction is the binding of releaser. The reaction rate is set to be  10³(sec)⁻¹ to fit with the experiment results.  (The experiment was performed from 1hr till 10hr with interval 1 hr). When both the releaser-binding reaction and four-way branch migration occur, another branch migration the removal of hairpin occurs. The reaction rate kB through this reaction is  set to be 10⁻¹(sec)⁻¹ because the reaction rate of the branch migration is 10⁻¹(sec)⁻¹. 
+                        </p>
+                    </li>
+                </ol>
+                <p>The reaction path of this model is shown below with an example process of shrinking from Q3 to Q2.</p>
+                
                 
                 <div class="img100">
                     <img src="sim_imgs/Sim_Rea_3.png" width="100%" border="0" alt="">
-                    <p> fig.2 . 3  Schematic illustrations of the simulation model for RHCR shrinking</p>
+                    <p> fig.8 Example of shrinkage reaction</p>
                 </div>  
+                
+                <p>
+                     <math mathsize="8pt"><msub><mi>P</mi><mn>3</mn></msub></math>, <math mathsize="8pt"><msub><mi>Q'</mi><mn>3</mn></msub></math>, <math mathsize="8pt"><msub><mi>Q''</mi><mn>3</mn></msub></math> are the state of <math mathsize="8pt"><msub><mi>Q</mi><mn>3</mn></msub></math> after the four-way branch migration, releaser binding to the toehold, and the removal of the bases at the end by nickase respectively.. 
+                    The simulation model from <math mathsize="8pt"><msub><mi>Q</mi><mn>3</mn></msub></math> state to <math mathsize="8pt"><msub><mi>Q</mi><mn>2</mn></msub></math> without nickase is shown below.
+                </p>
                 
                 <div class="img100">
                     <img src="sim_imgs/Sim_Rea_4.png" width="100%" border="0" alt="">
-                    <p>fig.4 Shrinkage reaction model diagram without nickase</p>
+                    <p>fig.9 Shrinkage reaction model diagram without nickase</p>
                 </div>  
                 
+                <p>
+                    The following differential equations were constructed from this model and then it was simulated. The red one is  related to nickase activity.
+                </p>
                 <div class="img100">
                     <img src="sim_imgs/Equation5.png" width="100%" border="0" alt="">
                 </div>  
                 
-                <div class="img100">
-                    <img src="sim_imgs/Sim_Rea_5.png" width="100%" border="0" alt="">
-                    <p>fig.5. Simulation results of shrinkage reaction with nickase</p>
-                </div>  
+                <p>The initial concentration was carried out at [Q0]=0.1μmol/L、[H1]=[H2]=1μmol/L.  It was set to be able to up to 12imer by extending reaction from the beginning of the experiment.  And releaser was added 11hour after the beginning of the experiment with [RH1]=[RH2]=2μmol/L.  We utilized Scilab for simulation.  The graph shows product mostly accumulated at 2 mer, 3 mer, and 5 mer.   The results are shown below. </p>
                 
                 <div class="img100">
-                    <img src="sim_imgs/Sim_Rea_6.png" width="100%" border="0" alt="">
-                    <p>fig.5. Simulation results of shrinkage reaction with nickase</p>
+                    <img src="sim_imgs/withnickase.png" width="100%" border="0" alt="">
+                    <p>fig.10. Simulation results of shrinkage reaction with nickase</p>
+                </div>  
+                
+                <p>Then the results in the case without nickase is shown below.</p>
+                
+                <div class="img100">
+                    <img src="sim_imgs/withoutnickase.png" width="100%" border="0" alt="">
+                    <p>fig.11. Simulation results of shrinkage reaction without nickase</p>
                 </div>  
                 
                 
