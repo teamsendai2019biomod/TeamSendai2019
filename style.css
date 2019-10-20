@@ -170,11 +170,10 @@ body{
     margin: 5% 15% 0% 15%;
     text-align: justify;
 }
-.imag70 >p{
+.img70 >p{
     margin-top:0px;
     margin-bottom: 5px;
-    padding-top: 0;
-    font-size:12px;
+    font-size:18px;
 }
 
 /*========================  imgbox  ===========================*/
