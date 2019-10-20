@@ -19,7 +19,7 @@ body{
 }
     @media screen and (min-width:450px){
         body{
-    font-size: 130%;
+    font-size: 115%;
 }
     }
     
@@ -105,7 +105,7 @@ body{
     font-size:14px;
 }
 .img100 >h6{
-    font-size: 0.7em;
+    font-size: 0.6em;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -124,6 +124,7 @@ body{
 }
 
 .img70 >h6{
+    font-size: 0.6em;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -260,27 +261,27 @@ body{
 
 
 p{
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: justify;
     color:darkslategray;
     margin: 1em 0.4em 1em 1em;
 }
 
 h2{
-    font-size: 1.8em;
+    font-size: 1.6em;
     color:darkslategray;
     border:#2f3a44 0px solid;  
     border-left:#2f3a44 0px solid;  
-    padding: 5px 3px;
+    padding: 5px 0px;
     margin-bottom: 0;
     margin-left: 0.2em;
 }
 
-h3{ font-size:1.6em;
+h3{ font-size:1.4em;
     color: black;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    padding-left: 0.3px;
+    padding-left: 0.4px;
 }
 
 h4{
