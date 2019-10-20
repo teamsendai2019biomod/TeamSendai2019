@@ -227,6 +227,8 @@ $(document).ready(function() {
     <a id="d1"></a>
         <div class="main">
              <div class="container">
+                 
+                <h1>Free energy estimation</h1>
                 <div class=topic><h2>Purpose</h2></div>
                 <p>
                      Calculate <math mathsize="8pt"><mo>&Delta;</mo><mi>G</mi></math> for each reaction and quantitatively estimate the feasibility of the RHCR. In addition, based on the calculated free energies, simulate the difference in reaction rate with and without Nicking Endonuclease in the shrinking reaction to confirm the validity of our shrinking method.
@@ -755,13 +757,19 @@ $(document).ready(function() {
                     In the shrinking reaction, while the desired structure is P’, the H2 end version favors Q’ than P’(fig.4). However, because ΔG is enough low to occur reversible reaction between Q’ and P’, there is no problem in the shrinking reaction.
                     We have succeeded in the theoretical explanation that DNA complex shifts to P state by nicking endonuclease.
                 </p>
+      
                 
-                 <h1>Simulation of concentration change</h1>
+                <!-- ================== 後半  ====================-->
+                <!-- ================== 後半  ====================-->
+                <!-- ================== 後半  ====================-->
+                
+
+                <h1>Reaction rate simulation</h1>
                 <p>We simulated RHCR extending/shrinking. The simulation model for extending is shown below.</p>
                 
                 <div class="img100">
                      <img src="sim_imgs/Sim_Rea_1.png" width="100%" border="0" alt="">
-                    <p>fig.1 Schematic illustrations of the simulation model for RHCR extending</p>
+                    <p>fig.6 Schematic illustrations of the simulation model for RHCR extending</p>
                 </div>
                 
                 <p>The state with only A and R is defined as Q0, then H1 hairpin binds to the toehold sequence to make P1. Next, P1 changes to Q1 through the four-way branch migration. Then, H2 hairpin binds to the Q1 toehold sequence covered with purple to make Q2 by  branch migration.We regard these reactions as 1 cycle. DNA extending occurs repeating this cycle over and over again.
@@ -834,17 +842,17 @@ $(document).ready(function() {
                 </p>
                  <div class="img100">
                     <img src="sim_imgs/Sim_Rea_2.png" width="100%" border="0" alt="">
-                    <p> fig.2 . 3  Schematic illustrations of the simulation model for RHCR shrinking</p>
+                    <p> fig.7  Schematic illustrations of the simulation model for RHCR shrinking</p>
                 </div>    
                 
                 <div class="img100">
                     <img src="sim_imgs/Sim_Rea_3.png" width="100%" border="0" alt="">
-                    <p> fig.2 . 3  Schematic illustrations of the simulation model for RHCR shrinking</p>
+                    <p> fig.8 Example of shrinkage reaction</p>
                 </div>  
                 
                 <div class="img100">
                     <img src="sim_imgs/Sim_Rea_4.png" width="100%" border="0" alt="">
-                    <p>fig.4 Shrinkage reaction model diagram without nickase</p>
+                    <p>fig.9 Shrinkage reaction model diagram without nickase</p>
                 </div>  
                 
                 <div class="img100">
@@ -852,13 +860,13 @@ $(document).ready(function() {
                 </div>  
                 
                 <div class="img100">
-                    <img src="sim_imgs/Sim_Rea_5.png" width="100%" border="0" alt="">
-                    <p>fig.5. Simulation results of shrinkage reaction with nickase</p>
+                    <img src="sim_imgs/withnickase.png" width="100%" border="0" alt="">
+                    <p>fig.10. Simulation results of shrinkage reaction with nickase</p>
                 </div>  
                 
                 <div class="img100">
-                    <img src="sim_imgs/Sim_Rea_6.png" width="100%" border="0" alt="">
-                    <p>fig.5. Simulation results of shrinkage reaction with nickase</p>
+                    <img src="sim_imgs/withoutnickase.png" width="100%" border="0" alt="">
+                    <p>fig.11. Simulation results of shrinkage reaction without nickase</p>
                 </div>  
                 
                 
