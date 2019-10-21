@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jack and DNA stalk |BIOMOD2019</title>
+    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1"> -->
+        
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<link rel="stylesheet" media="all" type="text/css" href="style.css" />
+
+<!-- ※デフォルトのスタイル（style.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="tablet.css" />
+<!-- ※タブレット用のスタイル（tablet.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+<!-- ※スマートフォン用のスタイル（smart.css） -->
+        
+        
+        <link rel="stylesheet" href="experimentwiki.css">
+        
+        <link rel="stylesheet" href="experiment.css">
+        <link rel="stylesheet" href="reponsive.css">
+        
+        <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+        
+        
+        
+    </head> 
+    
+    
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+  
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     
+ <script> 
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+<script>    
+    $(function() {
+  $('.toggle').click(function() {
+    $(this).toggleClass("active");
+		if($(this).hasClass('active')) {
+			$('.global_nav').addClass('active');
+		} else {
+			$('.global_nav').removeClass('active');
+		}
+  });
+});
+    </script>    
+    
+    
+<!--============閉会ボタン===========================-->
+<script>
+   $(function(){
+   $("ul.children").after("<span class='accordionBtn'></span>");
+   $("ul.children").hide();
+   $("ul .accordionBtn").on("click", function() {
+     $(this).prev("ul").slideToggle();
+     $(this).toggleClass("active");
+   });
+});    
+    </script>
+    
+    
+<!--==================================================-->
+  <script>
+      var startPos = 0,winScrollTop = 0;
+    $(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.header').addClass('hide');
+        $('.global_nav').addClass('hide');
+    } else {
+        $('.header').removeClass('hide');
+        $('.global_nav').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+    </script>
+    
+    
+    <script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+    
+    
+ 
+    
+      <body>
+<!-- =======================header====================================================== -->    
+          
+          <div class="header">
+
+            
+<div class="header-left">
+    <div class="head1"></div>
+    <div class="head2"><a><a>TeamSendai<br>Jack and DNA stalk</a></a></div>
+    <a href="https://twitter.com/teamsendai_bio"><div class="head3"></div></a>
+    <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3">
+    <div class="head4"></div></a> 
+</div>
+        </div>
+          
+<div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>        
+
+                         
+ <!--===================================================-->
+<!--===================================================-->
+<!--===================================================-->
+ <div class="global_nav" body ontouchstart=""> 
+   <!-- <div class="glnavleft">
+    <li class="nav_li"><a href="#menu1">メニュー1</a></li>
+    <li class="nav_li"><a href="#menu2">メニュー2</a></li>
+    <li class="nav_li"><a href="#menu3">メニュー3</a></li>
+    </div>     -->
+<!--===================================================================================nav-->
+        
+    <ul class="nav"> 
+        <li><a href="index.html">Home</a>
+            <ul>
+                <li><a href="index.html#a1">Abstruct</a></li>
+                <li><a href="index.html#a2">Youtube</a></li>
+            </ul>
+        </li>
+
+        <li><a href="background.html">Background</a>
+            <ul>
+                <li><a href="background.html#b1">Motivation</a></li>
+                <li><a href="background.html#b2">Idea</a></li>
+            </ul>
+        </li>
+        <li><a href="design.html">Design</a>
+            <ul>
+                <li><a href="design.html#c1">Mechanism</a>
+                    <ul>    
+                        <li><a href="design.html#c2">HCR</a></li>
+                        <li><a href="design.html#c3">RHCR</a></li>
+                    </ul>
+                </li>
+                <li><a href="design2.html">Sequence Design</a>
+                    <ul>    
+                        <li><a href="design2.html#c4">Extending reaction</a></li>
+                        <li><a href="design2.html#c5">Shrinking reaction</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="simulation.html">Simulation</a>
+            <ul>
+                <li><a href="simulation.html#d1">Free energy estimation</a></li>
+                <li><a href="simulation.html#d2">Reaction rate simulation</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="experiment.html">Experiment</a>
+            <ul>
+                <li><a href="experiment.html#e1">HCR</a></li>
+                <li><a href="experiment.html#e2">RHCR</a>
+                   <ul>
+                       <li><a href="experiment.html#e3">Extending Reaction</a></li>
+                       <li><a href="experiment.html#e4">Nickase cleavage</a></li>
+                       <li><a href="experiment.html#e5">Shrinking Reaction</a></li>
+                   </ul>
+                </li>
+                <li><a href="material.html">Material and Method</a></li>
+                <li><a href="supplement.html">Supplementary</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="future.html">Future</a></li>
+        
+        <li><a href="team.html">Team/ELSI</a>
+            <ul>
+                <li><a href="team.html#g1">Member</a></li>
+                <li><a href="team.html#g2">Menter</a></li>
+                <li><a href="team.html#g3">Supecial Thanks</a></li>
+                <li><a href="elsi.html">ELSI</a></li>
+            </ul>
+        </li>
+        
+
+
+    <div class="box1">
+        <a href="https://twitter.com/teamsendai_bio"><div class ="tw1">Twitter</div></a>
+        
+        <a href="https://www.bing.com/videos/search?q=BIOMOD2018&&view=detail&mid=AC76207D614B395C66A4AC76207D614B395C66A4&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DBIOMOD2018%26FORM%3DHDRSC3">
+            <div class ="yt1">YouTube</div>
+        </a>  
+    </div>       
+
+        
+              
+         
+
+    </ul>   
+<!--===========================================-->
+
+    
+    </div>  
+<!--===================================================-->
+<!--===================================================-->
+<!--===================================================-->
+
+             
+             
+             
+      
+                   
+             
+             
+             
+<!--======================MAIN===================-->          
+            <br><br><br>
+ <div class="main">
+     <div class="container">
+             <div class=topic><h2>Experiment</h2></div>
+         
+         <div class="iconbox">
+             <div class="iconbox2">
+                <a href="experiment.html#e1"><div class="iconbox3">
+                       <p>Conventional<br>HCR</p>
+                </div></a>
+                <div class="iconbox3b">
+                    <a href="material.html"><div class="iconbox4">
+                        <p>Material and Method</p>
+
+                    </div></a>
+                    <a href="supplement.html"><div class="iconbox4">
+                        <p>Supplementary</p>
+                    </div></a>
+
+                 </div> 
+         
+         
+             </div>
+             <div class="iconbox2">
+                
+                 <a href="experiment.html#e3"><div class="iconbox3a">
+                        <p>RHCR<br>extending</p>
+                </div></a>
+                 <a href="experiment.html#e4"><div class="iconbox3a">
+                        <p>RHCR<br>Nickase cleavage</p>
+                </div></a>
+                <a href="experiment.html#e5"><div class="iconbox3a">
+                     <p>RHCR<br>shrinking</p>
+                    </div></a>
+                
+         
+         
+             </div>
+         
+         
+         </div>
+       
+    
+        </div>
+ </div>
+    
+    <div class="main2">
+         
+         <div class="container">
+             <br><br><br>
+             <h2>Experiment</h2>
+             <p>In the following experiments, we confirmed the function of  RHCR extend/shrinking.</p>
+             
+             <h3>Purpose & Method</h3>
+             <p>
+                  Before we test the RHCR , we examined the conventional HCR by electrophoresis based on Vencataraman et al., 2007. Performing experiments on conventional HCR makes it possible to investigate both validity and experimental condition of RHCR, like temperature, annealing profile and buffer condition. After conventional HCR,  we examined the sign of HCR with our designed RHCR sequence. Then, we examined the RHCR shrinking.
+                  For the experiments, we performed both polyacrylamide gel electrophoresis (PAGE) and agarose gel electrophoresis  <a href="supplement.html">(See Material & Method for further information about electrophoresis)</a> . By performing electrophoresis, we could quantitatively evaluate DNA extending/shrinking. The results and discussions are shown in the following sections.  
+             </p>
+             <br>
+             <h3>Results & Discussion</h3>
+             <p><strong>Conventional HCR</strong></p>
+             <p>First, we tried to reproduce the experiment of Vencataraman et al., 2007 (Fig.1) . We reproduced almost exactly the same experiment condition except for running buffer condition. The results are shown below. (We call A as initiator because theoretically A opens RH1, led to HCR. And we call RH1,RH2 as hairpin DNAs necessary for polymerization, RH1-rel, RH2rel as releaser DNAs necessary for the shrinking.)</p>
+         
+            <div class="img100">
+                 <img src="experiment_imgs/fi.1.1019.png" width="100%" border="0" alt="">
+                 <p>fig.1 Confirmation of HCR extending</p>
+                 <h6>The concentration is indicated for each DNA (μM) . The concentration ratio between 07A,07R and 07H1, 07H2 is  1:10.  Annealing indicates the samples listed are annealed in their mixed state (From 95 degrees to 4 degrees, -1℃ per min). Reaction was done in 1×SPSC buffer, and incubated overnight at RT. Hairpins were annealed before the reaction. Run in 2% agar gel with 100v /30mins at 4℃. 100 bp ladder was applied on the left edge. </h6>
+            </div>
+            
+            <p>As a result,  DNA extending by HCR was successfully observed (fig.1).  The bands observed around 20 bp were structures in the form of hairpins (Lane4-14). Smear bands were observed in the lane of H1 and H2 without Initiator (Lan9&10) . This is considered to be an effect of a leak reaction caused by non-specific opening of H1 and H2 . The progression of HCR was significantly observed when the Initiator was added to the solution with hairpins (Round 700-800 bp enough for 14-16 mer. Lane9&13) . We also performed the experiment to confirm HCR extending in cutsmart  buffer to combine with Nickase. The result is shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.2.1019.png" width="100%" border="0" alt="">
+                 <p>fig.2 Reaction buffer change did not affect HCR extending.</p>
+                 <h6>The concentration is indicated for each DNA (μM) . The concentration ratio between 07A,07R and 07H1, 07H2 to be 1:10.  Annealing indicate the samples listed are annealed in their mixed state (From 95 degrees to 4 degrees, -1℃ per min.) Reaction in 1×SPSC buf or 1×cutsmart buf overnight at RT. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃. </h6>
+            </div> 
+            <p>As a result, we found that buffer did not affect HCR extending (fig.2) . Hereafter, we decided to use cutsmart buffer. </p>
+            
+            
+            <h3>RHCR extending</h3>
+            <p>Second, we conducted the RHCR extending experiment.  We applied the experimental condition that we have found in the previous experiments. The results are shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.3.1019.png" width="100%" border="0" alt="">
+                 <p>fig.3 Confirmation of DNA extending of our designed RHCR.</p>
+                 <h6>The concentration ratio was changed to observe gradual polymerization by HCR (Lane6,7&8) . In order that the inter-molecular reaction get promoted, the sample with higher concentration was prepared (Lane9) .Reaction in 1×cutsmart buf overnight at RT. DNA hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.  The concentration is indicated for each DNA (μM) . The concentration ratio between 07A,07R and 07H1, 07H2 to be 1:10.  Annealing indicate the samples listed are annealed in their mixed state (From 95 degrees to 4 degrees, -1℃ per min).</h6>
+            </div> 
+            <p>As a result, the progression of HCR was observed successfully when Initiator was added to the solution (Lane 4&8)  (Fig.3). Additionally, the gradual polymerization was observed when the concentration ratio was increased (Lane 6,7&8), grown up to over 1,000 bp that is equivalent to more than 20mer (Lane9), while the limit of the longest DNA was already observed in the small ratio for the sample without R. Thus, this data suggests that there is a high possibility for our designed DNA to extend well enough. </p>
+            
+            <h3>Cleavage by Nickase</h3>
+            <p>Before proceeding to the RHCR shrinking experiment,  we examined the experiment condition of Nickase.  Nicking by Nickase is necessary for our mechanism. The result is shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.4A.1019.png" width="100%" border="0" alt="">
+            </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.4B.1019.png" width="100%" border="0" alt="">
+            </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.4C.1019.png" width="100%" border="0" alt="">
+                 <P> fig.4 Evaluation of Nickase activity</P>
+                 <h6>
+                    A. Reaction in either 1×cutsmart buf or 1×SPSC buf for 1hr at 37 degrees.  Samples in odd number are in 1×SPSC buf, while samples in even number are in 1×cutsmart buf.. Samples were annealed before the reaction. Run in 15% polyacrylamide gel at 100v for 90mins at 4℃ with 20bp ladder. Dilution into 0.1μM. (See Supplementary for buffer change experiment with Nickase.
+                 </h6>
+                 <h6>
+                     B. Fluorescence intensity analysis of nicked sequence. The ratio of nicked sequence (=bottom) over the un-nicked sequence (=up) was evaluated. The Fluorescence intensity was measured by “integrated density” function of Fiji. To get rid of the effect of background intensity, corrected value was applied for calculation (=Bottom corrected, Up corrected). The equation is expressed as (Bottom corrected)/(Bottom corrected +Up corrected). 
+                 </h6>
+                 <h6>
+                     C.The analysis result for evaluation of Nickase activity.
+                 </h6>
+            </div> 
+            <p>
+                As a result, we confirmed a band below 20 bp, suggesting Nickase worked correctly (Fig.5A). Furthermore, we performed the analysis about how much targeted sequence was nicked by Nickase, and found that nearly 20% of it was nicked correctly. 
+                Thus, we applied the above condition for Nickase experiment.
+            </p>
+            
+            <h3>Shrinking by RHCR</h3>
+            <p>We performed the experiment to confirm RHCR shrinking. The result is shown below.</p>
+            <div class="img100">
+                 <img src="experiment_imgs/fi.5.1020.png" width="100%" border="0" alt="">
+                 <p>fig.5 Confirmation of DNA shrinking of our designed RHCR DNA.</p>
+                 <h6>DNAs for extending were annealed in mixed state (Lane2-14), while same samples with Lane 9 in Fig.3 was prepared (Lane15&16). Both Nickase and releasers were added to the samples before the reaction. Reaction for 1hr at 37 degrees. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.</h6>
+            </div> 
+            <p>
+                As a result, the shrinking was observed when both Nickase and releasers were added to the extended samples made in advance (Lane 6&8, 9&11, 12&14, 14&16. Especially, from around 1 kb to 400 bp shrinking was observed in Lane12&14), even for the one that incubated overnight (From around 1 kb to 900 bp. Lane 15&16) (Fig.6). Furthermore, releasers are not enough for shrinking (Lane 6&7, 9&10, 12&13, and 17&15). 
+                There remains a possibility that the shrinking occur only by Nicking. We conducted an experiment to check that possibility. The result is shown below.
+            </p>
+            
+            <div class="img100">
+                 <img src="experiment_imgs/fi.6.1019.png" width="100%" border="0" alt="">
+                 <p>fig.6 Nicking is not enough for shrinking</p>
+                 <h6>DNAs for extending were annealed in mixed state. Both Nickase and releasers were added to the samples before the reaction. Reaction for 1hr at 37 degrees. Hairpins were annealed before the reaction. Run in 2% agar gel at 50v for 80mins at 4℃.</h6>
+            </div> 
+            
+            <p>
+            According to the result, although the shrinking only by Nicking was observed, more shrinking 
+            was observed with both Nickase and releasers (With both Nickase and releasers, around 600 bp shrinking 
+            was observed ,while 100bp shrinking with only Nickase. Lane 15&16). Thus, it is strongly suggested that our
+            RHCR mechanism worked correctly.  There remains another concern whether shrinking was really carried out maintaining 
+            the A and R as the end of extended DNA. In order to confirm this worked correctly, we came up with an idea to
+            observe the formed structure by Atomic Force Microscopy (AFM) which we could observe the 3d structures of the sample. 
+            If we could calculate the length between A and R (the crosslinking point),  we could show that our system worked correctly. 
+            Before that, we observed the same sample with Lane 12 & 14 (fig.6) to validate the experimental condition of AFM. The result is shown below.
+            </p>
+            
+    
+            <div class="img100">
+                 <img src="experiment_imgs/fi.7.A_B.1020.png" width="100%" border="0" alt="">
+            </div> 
+            <div class="img100">
+                 <img src="experiment_imgs/fi.7.C.1019.png" width="100%" border="0" alt="">
+                 <p>fig.7 AFM image of the products by both before/after shrinking reaction.</p>
+                 <h6>
+                    (A) One spot image of the samples before shrinking reaction. Observed in Tris-EDTA buf. Diluted into 60nM. 400*300*20(nm3).scale bar indicates 50nm.
+                 </h6>
+                 <h6>
+                    (B)One spot image of the samples after shrinking reaction. Observed in Tris-EDTA buf. Diluted into 600nM. 400*300*20(nm3). Scale bar indicates 50 nm.
+                </h6>
+                <h6>
+                    (C)Analysis result about length of the observed structures. We selected 100 products at random (4 samples for each observed spot) and measured the length manually with Fiji. Average of the before /after shrinking is 273.8281721 and 61.90713529 bp, and SD is 173.0661769 and 26.16084231. T value is 4.44043E-21. Maximum length of the before/after shrinking is 1046.673971 and 166.0822059bp. 
+                 </h6>
+            </div> 
+            
+            <div class="img100">
+                 <img src="experiment_imgs/fig.8.1019.png" width="100%" border="0" alt="">
+                 <p>fig.8 AFM images and schematic illustrations of formed structures before/after shrinking</p>
+            </div> 
+            <p>As a result, the shrunk products were significantly observed after shrinking reaction (Fig.8A,B&C). 
+                As illustrated in Fig.9, extended products with various lengths were observed, suggesting that HCR extending
+                successfully occurred (Before shrinking). This result matches with the electrophoresis result in which various-sized
+                products were observed with equal fluorescence intensity (Fig.7, Lane14) . In the other hand, most of shrunk products 
+                were observed around 100bp that equals to the size of dimer, suggesting that extended products shrunk to the original state of A&B. 
+                Thus, if we could mark the crosslinking point, A&R, we may completely prove the functionality of RHCR.
+            </p>
+            <h3>Summary&Future</h3>
+            <p>From the results above, we conclude that the functionality of our RHCR system was successfully confirmed by 
+                the experiments. We listed both what we have done and  what we need to investigate more.  What we have done
+            </p>
+            
+            <ul>
+                <li>Reproducing the HCR experiment of Vencatarman et al., 2007. </li>
+                <li>Verifying experiment condition for HCR.</li>
+                <li>Performing HCR extending with our RHCR system.</li>
+                <li>Suggesting high possibility for shrinking of our RHCR system.</li>
+                <li>Determining experiment condition for AFM imaging. </li>
+            </ul>
+         
+            <p>What we need to investigate more</p>
+            <ul>
+                <li>Confirming reversibility of our RHCR system.</li>
+                <li>Confirming whether our RHCR system works correctly maintaining connectivity. </li>
+            </ul>
+         
+            <div class="main">
+                <div class="container">
+                   <h3>Information<hr></h3>
+                   <a href="supplementary.html" class="btn-square">Supplementary information</a>
+                   <a href="Material.html" class="btn-square">Material &amp; Methodn</a>
+                </div>
+            </div>   
+            
+            
+<!-- =============================================================== -->      
+        <div class="footer">
+                 <div class="footer-left">
+                    
+                 </div>
+                 <div class="footer-right">
+                     &copy;2019 TEAM SENDAI
+                 </div>
+                 <div class="clear"></div>
+              </div>  
+        
+         
+     
+    </body>
+</html>
